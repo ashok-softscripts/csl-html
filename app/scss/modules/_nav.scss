@@ -1,0 +1,123 @@
+.nav {
+   	position: fixed;
+	z-index: 99;
+	left: 0px;
+	top: 0px;
+	&__badge {
+    	display: inline-block;
+		padding: 23px 23px 17px;
+		background: site-color(blue_mid_light);
+		line-height: normal;
+		cursor: pointer;
+		transition: all 0.2s ease;
+		a {	
+			font-weight: regular-of($display-type);
+			@include rem(font-size, 1rem);
+			span{ 
+				/*@include rem(width, 1.063rem);
+				@include rem(height, 0.1875rem);*/
+				width: 17px;
+				height: 3px;
+				background: site-color(blue);
+				display: inline-block;
+				vertical-align: text-top;
+				position: relative;
+				/*@include rem(margin-top, 0.1875rem);*/
+				margin-top: 3px;
+				transition: all 0.2s ease;
+				margin-right: 7px;
+				&:before, &:after{
+					display: block;
+					position: absolute;					
+					content: "";
+					/*@include rem(top, -0.4375rem);					
+					@include rem(width, 1.063rem);
+					@include rem(height, 0.1875rem);*/
+					width: 17px;
+					height: 3px;
+					top: -6px;
+					background: site-color(blue);
+					transition: all 0.2s ease;
+				}
+				&:after{
+					/*@include rem(top, 0.4375rem);*/
+					top: 6px;
+				}
+			}
+			&:after{
+				bottom: -1px;
+			}
+		}
+		&:hover{
+			background: site-color(blue_light);
+		}
+    }
+
+	@include breakpoint-layout(break-1) {
+		
+	}
+
+	@include breakpoint-layout(break-2) {
+
+	}
+
+	@include breakpoint-layout(break-3) {
+		
+	}
+
+
+	&__list {
+		@include rem(padding-left, 2.938rem);
+		list-style: none;
+		padding-top: 22px;
+		padding-bottom: 22px;
+		display: none;
+	}
+
+    &__item {
+		display: block;
+		padding: 0px;
+		margin: 0px;
+		margin-bottom: 22px;
+		border: 0px;
+		text-align: left;
+		line-height: normal;
+    }
+
+    &__link {		
+        @include rem(font-size, 1.5rem);
+    }
+	
+	&--smaller{
+		.nav__item{
+			margin-bottom: 17px;
+		}
+		.nav__link{
+			@include rem(font-size, 1rem);			
+		}
+	}    
+	
+	&--open{
+		@include rem(width, 19.06rem);
+		height: 100%;
+		background: site-color(blue_mid_light);
+		.nav__badge{
+			a {
+				span{
+					background: transparent;
+					&:before{
+						transform: rotate(-45deg);
+						top: 0px !important;
+					}
+					&:after{
+						transform: rotate(45deg);
+						top: 0px !important;
+					}
+				}
+			}
+		}
+		.nav__list{
+			display: block;
+		}
+	}
+}

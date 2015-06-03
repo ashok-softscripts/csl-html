@@ -1,0 +1,35 @@
+.arrows-nav{
+	margin-top: 25px;
+	&__list{
+		margin: 0px;
+		padding: 0px;
+		list-style: none;
+		display: inline-block;
+		margin-right: 50px;
+	}
+	&__item{				
+		padding: 0px;
+		&:before{
+			content: "";
+			display: inline-block;
+			width: 5px;
+			height: 10px;
+			background: url(#{$image-path}/arrows/t-arrow.png) no-repeat left center;
+			margin-left: -13px;
+			margin-right: 13px;
+		}
+	}
+	&__link{
+		@include rem(font-size, 1.125rem);	
+		font-weight: bold;
+	}
+}
+
+.arrow-link{
+	background: url(#{$image-path}/arrows/arrow.png) no-repeat right center;
+	padding-top: 0px;
+	padding-right: 1.4rem;
+	&.arrow-blue{
+		background-image: url(#{$image-path}/arrows/arrow-blue.png);
+	}
+}

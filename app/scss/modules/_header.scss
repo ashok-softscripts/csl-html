@@ -1,0 +1,27 @@
+.header{
+	background: site-color(blue_ver_light);
+	padding-top: 50px;
+	padding-bottom: 110px;
+	.container{
+		.logo{
+			float: right;
+            a {
+                display: block;
+                width: 271px;
+				height: 212px;
+                margin: 0;
+                padding: 0;
+                border: 0;
+                text-indent: -999em;
+				@include svg-bg(logo);
+				background-repeat: no-repeat;
+				&:after{
+					display: none;
+				}
+            }
+		}
+		.header-intro{
+			padding-top: 120px;			
+		}
+	}
+}

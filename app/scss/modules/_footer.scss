@@ -1,0 +1,25 @@
+.footer{	
+	background: site-color(blue_ver_light);	
+	@include rem(padding-bottom, 4.2rem);
+	@include clearfix;
+	&__left{
+		@include span(5 of 12);
+		float: left;
+		&__container{
+			@include rem(max-width, 30.24rem);
+			@include rem(margin-top, 7.41rem);	
+			margin-left: auto;
+		}
+	}
+	&__right{
+		@include span(7 of 12);
+		float: left;
+		background: site-color(blue_mid_light);
+		&__container{
+			@include rem(margin-top, 1.765rem);
+			img{
+				@include rem(max-width, 17rem);
+			}
+		}
+	}
+}

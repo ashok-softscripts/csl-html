@@ -1,0 +1,131 @@
+.features{
+	border-top: 1.5rem solid transparent;
+	&__row{
+		@include clearfix;
+		border-bottom: 1.5rem solid transparent;		
+	}
+	&__block{
+		float: left;
+		position: relative;
+		&:first-child{
+			border-right: 1.5rem solid site-color(white);
+			box-sizing: border-box;
+		}
+		.image-overlay{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			left: 0px;
+			top: 0px;			
+			background-repeat: no-repeat;
+			background-size: cover;
+			@include filter_elements(grayscale(100%) sepia(100%));
+			opacity: 0.7;
+		}
+		.text{
+			filter: none;
+			@include rem(margin, 3rem);
+			position: relative;			
+		}
+		
+		&.seasonal-message{			
+			@include span(9 of 12);	
+			.text{
+				@include rem(margin-top, 7rem);
+				@include rem(margin-bottom, 5.5rem);
+			}
+			h2{
+				color: site-color(white);
+				margin-bottom: 1rem;
+			}
+			.arrow-link{
+				@include text-link(site-color(white));
+			}
+		}
+		&.newsletter{
+			background: site-color(blue_mid_light);
+			@include span(3 of 12);
+			.text{
+				@include rem(margin-left, 2.5em);
+				@include rem(margin-right, 2.5em);
+				@include rem(margin-top, 6em);
+			}
+			h3{
+				font-weight: bold-of($display-type);
+				font-size: 1.5vw;
+				border: 0px;
+			}
+			p.intro{
+				font-size: 1.5vw;
+				line-height: 1.8rem;
+				margin-bottom: 0.5em;
+			}
+			input[type="email"]{
+				max-width: 100%;
+				background-color: site-color(white);
+				border: none;
+				margin-left: -0.5rem;
+				margin-bottom: 1rem;
+			}
+			input[type="submit"], button{
+				@include text-link(site-color(blue));
+				font-weight: bold-of($display-type);
+				background: transparent;
+				border: none;
+				padding: 0px;
+				cursor: pointer;
+			}
+		}
+		&.testimonial{
+			@include span(6 of 12);
+			.alumni-image{
+				float: right;
+				width: 36%;		
+				@include filter_elements(grayscale(100%));
+				opacity: 0.5;
+				img{
+					width: 100%;
+				}
+			}
+			.text{
+				float: left;
+				width: 64%;
+				box-sizing: border-box;
+				@include rem(padding, 3rem);
+				margin: 0px;
+			}
+			h3{
+				font-weight: bold-of($display-type);
+				border: 0px;
+				padding: 0px;
+				font-size: 1.4vw;
+			}
+			blockquote{
+				margin-top: 0px;
+				p{
+					font-size: 1.4vw;
+					line-height: 1.8rem;
+					padding-left: 0px;
+					&:before{
+						left: -0.36em;
+					}
+				}
+			}
+			.arrow-link{
+				@include text-link(site-color(blue));			
+			}
+		}
+		&.org-promo{
+			@include span(6 of 12);
+			.text{
+				h3{
+					color: site-color(white);
+					@include rem(margin-bottom, 1rem);
+				}
+			}
+			.arrow-link{
+				@include text-link(site-color(white));			
+			}
+		}
+	}
+}
