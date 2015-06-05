@@ -16,15 +16,17 @@ $site-colors: (
     orange: #f36f43,
     orange_mid: #e86c42,
     orange_dark: #a3653c,
-    green: #008266,
+    green: #008266,	
     green_light: #d4e48f,
     green_dark: #254e40,    
     green_forest: #032127,
+	green_lime: #BCD45B,	
     gray: #808284,
     gray_light: #97a8ab,
+	gray_dark: #6c6c6c,
     red: #f54848, // removed: reset to rose
     black: #000000,
-    white: #ffffff   
+    white: #fff   
 );
 
 $site-color-names: map-keys($site-colors);

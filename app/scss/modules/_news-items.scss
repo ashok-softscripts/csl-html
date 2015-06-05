@@ -1,0 +1,40 @@
+.featured-news{
+	.container{
+	
+	}
+	.news{
+		&__list{
+			@include clearfix;
+			list-style: none;
+			margin: 0px;
+			padding: 0px;
+		}
+		&__item{
+			float: left;
+			@include span(3 of 12);
+			padding: 0px;
+			box-sizing: padding-box;
+			@include rem(padding-left, 0.5rem);
+			@include rem(padding-right, 0.75rem);
+			@include rem(margin-bottom, 1.5rem);			
+		}
+		&__thumb{
+			img{
+				width: 100%;
+			}
+		}
+		h3{
+			font-weight: bold-of($display-type);
+			border-bottom: none;			
+		}
+		&__excerpt{
+			@include rem(margin-bottom, 2rem);	
+			p{
+				@include rem(font-size, 1.5rem);
+			}
+		}
+		&__publish{
+			
+		}
+	}
+}

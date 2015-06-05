@@ -20,10 +20,10 @@
 				height: 3px;
 				background: site-color(blue);
 				display: inline-block;
-				vertical-align: text-top;
+				vertical-align: middle;
 				position: relative;
 				/*@include rem(margin-top, 0.1875rem);*/
-				margin-top: 3px;
+				margin-top: -4px;
 				transition: all 0.2s ease;
 				margin-right: 7px;
 				&:before, &:after{
@@ -35,13 +35,13 @@
 					@include rem(height, 0.1875rem);*/
 					width: 17px;
 					height: 3px;
-					top: -6px;
+					top: -7px;
 					background: site-color(blue);
 					transition: all 0.2s ease;
 				}
 				&:after{
 					/*@include rem(top, 0.4375rem);*/
-					top: 6px;
+					top: 7px;
 				}
 			}
 			&:after{

@@ -23,19 +23,13 @@ img {
 }
 
 svg {
-    max-width: 100%;
-    max-height: 100%;
-    opacity: 0;
-    transition: opacity 0.25s linear;
+    max-width: 99.8%; // not 100% - to avoid clipping
+    max-height: 99.8%;
 }
 
 ::placeholder {
-    color: site-color(gray_light);
+    color: site-color(gray_dark);
     transition: color 0.25s ease;    
-}
-
-:hover::placeholder {
-    color: lighten(site-color(gray), 10%);
 }
 
 :focus::placeholder {
@@ -58,7 +52,7 @@ svg {
 	//transition: all 0.2s ease;
 	&--has-nav{
 		@include rem(margin-left, 19.06rem);
-		.container, .footer__left__container{
+		.container, .footer__left__container, .pre-footer__container{
 			@include rem(margin-left, 3rem);
 		}
 	}

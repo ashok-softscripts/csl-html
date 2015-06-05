@@ -19,6 +19,7 @@ body {
     font-family: font-family-of($body-type);
     font-style: normal;
     font-weight: regular-of($body-type);
+	color: site-color(blue_dark);
 }
 
 %typeset {
@@ -78,7 +79,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: auto;
 
     a {
-        @include text-link(site-color(white));
+        @include text-link(site-color(blue_dark));
         @include type-match;
     }
 }

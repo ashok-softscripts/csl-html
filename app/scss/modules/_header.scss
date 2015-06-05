@@ -20,8 +20,20 @@
 				}
             }
 		}
-		.header-intro{
-			padding-top: 120px;			
+		.header-intro{			
+			padding-top: 120px;
+			&.header-alumni{ // Content Alumni template
+				h1{
+					border-bottom: none;					
+				}
+				p{
+					padding-top: 0px;
+					@include rem(font-size, 1rem);
+				}
+				.alumni-designation{
+					@include rem(margin-right, 2rem);					
+				}
+			}
 		}
 	}
 }

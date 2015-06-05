@@ -26,10 +26,12 @@
 }
 
 .arrow-link{
-	background: url(#{$image-path}/arrows/arrow.png) no-repeat right center;
+	background: url(#{$image-path}/arrows/arrow-blue.png) no-repeat right center;
 	padding-top: 0px;
-	padding-right: 1.4rem;
-	&.arrow-blue{
-		background-image: url(#{$image-path}/arrows/arrow-blue.png);
+	padding-right: 1.6rem;
+	transition: all 2s ease;
+	&.arrow-white{
+		background-image: url(#{$image-path}/arrows/arrow.png);
 	}
+	
 }

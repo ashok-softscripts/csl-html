@@ -27,7 +27,7 @@ function handleError(err) {
 gulp.task('styles', function () {
     return gulp.src('app/scss/*.scss')
         .pipe($.rubySass({
-            style: 'compressed',
+            style: 'expanded',
             require: 'susy',
             precision: 10
         }))
