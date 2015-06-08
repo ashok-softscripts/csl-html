@@ -7,9 +7,9 @@
 	&__block{
 		float: left;
 		position: relative;
-		&:first-child{
-			border-right: 1.5rem solid site-color(white);
-			box-sizing: border-box;
+		margin-right: 2.08%;
+		&:last-child{
+			margin-right: 0px;
 		}		
 		.image-overlay{
 			position: absolute;
@@ -29,16 +29,17 @@
 		}
 		
 		&.seasonal-message{			
-			@include span(9 of 12);	
+			width: 73.44%;
 			.text{
 				&.is-long{
 					@include rem(margin-top, 7rem);
 					@include rem(margin-bottom, 5.5rem);
 				}
 			}
-			h2{
+			h2, .h2-style{
 				color: site-color(white);
 				margin-bottom: 1rem;
+				font-weight: regular-of($display-type);
 			}
 			.arrow-link{
 				@include text-link(site-color(white));
@@ -46,7 +47,7 @@
 		}
 		&.newsletter{
 			background: site-color(blue_mid_light);
-			@include span(3 of 12);
+			width: 24.48%;
 			.text{
 				@include rem(margin-left, 2.5em);
 				@include rem(margin-right, 2.5em);
@@ -72,16 +73,17 @@
 				margin-bottom: 1rem;
 			}
 			input[type="submit"], button{
-				@include text-link(site-color(blue));
+				color: site-color(blue);
 				font-weight: bold-of($display-type);
-				background: transparent;
+				background: transparent;				
 				border: none;
+				border-bottom: 1px solid transparentize(site-color(blue), 0.5);
 				padding: 0px;
 				cursor: pointer;
 			}
 		}
 		&.testimonial{
-			@include span(6 of 12);
+			width: 48.96%;
 			.alumni-image{
 				float: right;
 				width: 36%;		
@@ -104,15 +106,10 @@
 				padding: 0px;
 				font-size: 1.4vw;
 			}
-			blockquote{
-				margin-top: 0px;
+			blockquote{				
 				p{
 					font-size: 1.4vw;
-					line-height: 1.8rem;
-					padding-left: 0px;
-					&:before{
-						left: -0.36em;
-					}
+					line-height: 1.8rem;					
 				}
 			}
 			.arrow-link{
@@ -120,7 +117,7 @@
 			}
 		}
 		&.org-promo{
-			@include span(6 of 12);
+			width: 48.96%;
 			.text{
 				h3{
 					color: site-color(white);

@@ -26,12 +26,20 @@
 }
 
 .arrow-link{
-	background: url(#{$image-path}/arrows/arrow-blue.png) no-repeat right center;
-	padding-top: 0px;
-	padding-right: 1.6rem;
+	padding-top: 0px;	
 	transition: all 2s ease;
+	&:after{
+		content: "";
+		width: 20px;
+		height: 17px;
+		display: inline-block;
+		margin-left: 0.5rem;
+		background: url(#{$image-path}/arrows/arrow-blue.png) no-repeat right center;
+	}
 	&.arrow-white{
-		background-image: url(#{$image-path}/arrows/arrow.png);
+		&:after{
+			background-image: url(#{$image-path}/arrows/arrow.png);
+		}
 	}
 	
 }

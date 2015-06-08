@@ -1,0 +1,12 @@
+.faq-section{
+	@include rem(padding-top, 4.5rem);
+	@include rem(padding-bottom, 5rem);
+	&__content{
+		width: 50%;
+	}
+	h3{
+		font-weight: bold-of($display-type);
+		border-bottom: 0px;
+	}
+	
+}

@@ -36,8 +36,10 @@
 		@include span(6 of 12);
 		li{
 			padding: 0px;
+			border-bottom: 0px;
+			margin: 0px 0px 10px;
 			a{
-				
+				//@include text-link(site-color(blue),site-color(blue_dark),90%);
 			}
 		}
 	}
@@ -68,8 +70,10 @@
 		@include span(5 of 12);
 		@include rem(margin-right, 1rem);
 		p{
-			color: site-color(blue);
-			text-decoration: underline;
+			margin-bottom: 0px;
+			span{
+				@include text-link(site-color(blue));
+			}
 		}
 	}
 }

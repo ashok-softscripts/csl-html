@@ -1,0 +1,36 @@
+.sectionsNav{	
+	float: right;
+	@include rem(margin-right, 1rem);
+	&.fixed{
+		position: fixed;
+		top: 10%;
+		right: 200px;
+		z-index: 1000;
+	}
+	&__list{
+		list-style: none;
+		padding: 0px;
+		margin: 0px 0px 1em;		
+	}
+	&__item{
+		padding: 0px 0px 10px;		
+	}
+	&__link{
+		font-weight: bold-of($body-type);
+		outline: none !important;
+		&.current{
+			@include text-link(site-color(blue_dark));
+			position: relative;
+			&:before{
+				content: "";
+				display: inline-block;
+				width: 5px;
+				height: 10px;
+				background: url(#{$image-path}/arrows/t-arrow.png) no-repeat left center;	
+				position: absolute;
+				left: -13px;
+				top: 2px;				
+			}
+		}
+	}
+}

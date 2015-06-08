@@ -407,31 +407,93 @@
     line-height: 0;
 }
 
+//outline animated focus
+@mixin focus-outline($color: darken(site-color(blue), 15%)) {
+    @if $focus-outline == true {
+        outline: 0 solid $color;
+        outline: 0 solid transparentize($color, 0.8);
+        transition: outline 0.25s ease, background-color 0.25s ease;
+
+        &:focus {
+            outline: 8px solid $color;
+            outline: 8px solid transparentize($color, 0.55);
+            background-color: rgba(255,255,255,0.1);
+        }
+    }
+}
+
+
+// Thick Content Mixins
+@mixin button($color: site-color(green), $hover: site-color(blue)) {
+    border: none;
+    padding: 0.9em 1.9em 0.7em;
+    @include rem(min-height, 3rem);
+    line-height: 1.375em;
+    @include rem(font-size, 18rem / 16);
+    font-family: font-family-of($display-type);
+	color: site-color(white);
+    display: inline-block;
+    background-image: none !important;
+    box-sizing: border-box;
+    margin: 0.5rem 1rem 0.5rem 0;
+    @include button-paint($color, $hover);
+    outline: 0 solid rgba(0,0,0,0.8);
+    font-weight: bold-of($display-type);
+    transition: none!important;
+    border-radius: 0;
+    font-feature-settings: 'kern' 1, 'onum' 0, 'liga' 1;	
+    .no-csstransforms & { // custs the mustard?
+        min-height: 0;
+    }
+
+    &:hover {
+        background-image: none;
+		color: site-color(white);
+    }
+    @if $focus-outline == true {
+        transition: outline 0.25s ease;
+
+        &:focus {
+            outline: 8px solid rgba(0,0,0,0.3);
+        }
+    }
+}
+
+@mixin button-paint($color: site-color(green), $hover: site-color(blue)) {
+    @if ($color != false) {
+		background-color: $color;
+    }
+
+    &:hover {
+        @if ($color != false) {
+            background-color: $color;
+        }
+
+        @if ($hover != false) {
+            background-color: $hover;
+        }
+    }
+}
 //draws a nicer text decoration
-@mixin text-link($colour: #fff, $hover: $colour) {
+@mixin text-link($color: #fff, $hover: $color, $pos: 98%) {
     font-family: font-family-of($display-type);
     -webkit-font-smoothing: antialiased;
-    color: $colour;
-    text-decoration: none;    
-    position: relative;    
-    transition: color .1s ease;
-	outline: none;
-    &:after{
-        display: block;
-        content: "";
-        position: absolute;
-        bottom: 1px;
-        height: 1px;
-        width: 100%;
-        left: 0px;
-        background: transparentize($colour, 0.65);
-        transition: all .1s ease;
-    }
+    color: $color;
+	text-decoration: none;
+    background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0) 50%,transparentize($color, 0.4) 50%);
+    background-repeat: repeat-x;
+    background-size: 2px 2px;
+    background-position: 0 $pos;
+    transition: color .1s ease, background .5s ease, outline 0.25s ease;
+    @include focus-outline;
+
     &:hover {
         color: $hover;
-        &:after{
-            background: transparentize($hover, 0.5);
-        }
+        background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0) 50%,transparentize($hover, 0.15) 50%);
+    }
+
+    &.stealth-link {
+        background-image: none;
     }
 }
 

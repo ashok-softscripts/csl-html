@@ -86,15 +86,15 @@ h1, h2, h3, h4, h5, h6 {
 
 // Heading level 1.
 h1, .h1-style {
-    // scales up to 4.5rem (3rem * 1.5)
-    @include type($font: $display-type, $fontsize: 3rem, $lineheight: 3, $leader: 1, $trailer: 1, $scale-ratio: 1.5);    
+    // scales up to 4rem (3.2rem * 1.25)
+    @include type($font: $display-type, $fontsize: 3.2rem, $lineheight: 3, $leader: 1, $trailer: 1, $scale-ratio: 1.25);    
 }
 
 // Heading level 2.
 h2, .h2-style {
     // scales up to 2.25rem (2rem * 1.13)
     @include type($display-type, 2rem, 2.5, 1, 1, 1.13);
-    
+    font-weight: bold-of($display-type);
 }
 
 // Heading level 3.
@@ -173,8 +173,7 @@ small {
 
 // Quotes.
 // Quotes.
-blockquote {
-    @include rem(margin-top, 2rem);
+blockquote {    
     @include rem(padding-bottom, 2rem);
     clear: both;
     @include clearfix;
@@ -189,8 +188,7 @@ blockquote {
         font-weight: regular-of($body-type);        
         color: site-color(blue_dark);        
         @include type($body-type, 1.5rem, 2, 0, 0, 1);          
-        position: relative;
-        @include rem(padding-left, 1.3rem);
+        position: relative;        		
         @include breakpoint-layout(break-1) {
         }
         @include breakpoint-layout(break-2) {            
@@ -199,7 +197,7 @@ blockquote {
             content: '\201C';
             position: absolute;
             top: 0.42em;
-            left: -0.18em;            
+            left: -0.4em;            
             color: rgba(49, 85, 92, 0.15);
             font-size: 4em;
         }
@@ -314,10 +312,35 @@ select{
     appearance: none;
 }
 
-input[type=submit] {
+input[type=submit], button {
+	font-family: font-family-of($body-type);
     cursor: pointer;
     -webkit-appearance: none;
     appearance: none;
+}
+
+table{
+	width: 100%;
+	border: 0px;
+	@include type($body-type, 1.125rem, 2, 0, 1);  
+	tr{
+		&:nth-child(even){
+			background-color: site-color(blue_mid_light);
+		}
+	}
+	th{
+		font-weight: bold-of($body_type);
+		padding: 0.563em 1.250em 0.313em;
+		border-bottom: 1px solid site-color(gray_light);
+	}
+	td{
+		font-weight: regular-of($body_type);
+		padding: 0.563em 1.250em 0.313em;
+		&.bold{
+			font-weight: bold-of($body_type);			
+		}
+	}
+	
 }
 
 // Letter space those capitals people, Jan Tschichold would be proud.

@@ -28,6 +28,10 @@ $debug-allow: true;
 @import "modules/footer";
 @import "modules/arrows-nav";
 @import "modules/icons";
+@import "modules/button";
+@import "modules/testimonial";
+@import "modules/seansonal-section";
+@import "modules/faq-section";
 @import "modules/features";
 @import "modules/news-items";
 @import "modules/filter-effects";
@@ -36,7 +40,14 @@ $debug-allow: true;
 @import "modules/pagination";
 @import "modules/alumni";
 @import "modules/content-alumni";
-
+@import "modules/programs";
+@import "modules/sections-nav";
+@import "modules/program-overview";
+@import "modules/program-format";
+@import "modules/instructors";
+@import "modules/speakers";
+@import "modules/program-applicants";
+@import "modules/program-fees";
 
 // Import all states
 // @import "states/state__name";

@@ -42,9 +42,14 @@ svg {
     clear: both;
 	@include rem(padding-left, 3rem);
 	@include rem(padding-right, 3rem);
-	box-sizing: padding-box;
+	box-sizing: border-box;
 	&.is-full{
 		padding: 0px;
+	}
+	&.is-offset{
+		max-width: 100%;
+		padding-right: 0px;
+		margin-right: 0px;
 	}
 }
 

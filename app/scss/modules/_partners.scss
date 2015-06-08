@@ -1,4 +1,4 @@
-.partners{
+.partners-section{
 	.container{
 		background: site-color(blue_ver_light);
 		@include rem(padding-top, 4rem);
@@ -9,13 +9,17 @@
 	h2{
 		@include rem(padding-bottom, 1.8rem);
 		text-align: center;
+		font-weight: regular-of($display-type);
 	}
-	&__list{
-		@include clearfix;
-		margin: 0px;
-		padding: 0px;
-		list-style: none;
+	.view-more{
+		text-align: center;
+		.arrow-link{
+			@include rem(font-size, 1.5rem);
+		}
 	}
+}
+.partners{
+	@include clearfix;	
 	&__item{
 		float: left;
 		@include span(3 of 12);
@@ -25,6 +29,7 @@
 		box-sizing: border-box;
 		display: table;
 		a{
+			background: none;
 			display: table-cell;
 			vertical-align: middle;
 			text-align: center;
@@ -36,12 +41,5 @@
 				opacity: 0.6;				
 			}
 		}
-	}
-	.view-more{
-		text-align: center;
-		.arrow-link{
-			@include rem(font-size, 1.5rem);
-		}
-	}
-	
+	}	
 }

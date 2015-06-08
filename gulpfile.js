@@ -127,7 +127,7 @@ gulp.task('images', ['svg'], function () {
 // move fonts to dist
 gulp.task('fonts', function () {
     return gulp.src('app/webfonts/**/*')
-        .pipe($.filter('**/*.{eot,svg,ttf,woff}'))
+        .pipe($.filter('**/*.{eot,svg,ttf,woff,otf}'))
         .pipe(gulp.dest('webfonts'))
         .pipe($.size());
 });

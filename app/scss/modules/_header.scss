@@ -15,23 +15,35 @@
                 text-indent: -999em;
 				@include svg-bg(logo);
 				background-repeat: no-repeat;
+				background-size: cover;
+				outline: none !important;
 				&:after{
 					display: none;
 				}
             }
 		}
 		.header-intro{			
-			padding-top: 120px;
+			padding-top: 10rem;
+			max-width: 52rem;
+			&.header-home{
+				padding-top: 7.5rem;
+			}
 			&.header-alumni{ // Content Alumni template
-				h1{
-					border-bottom: none;					
-				}
 				p{
 					padding-top: 0px;
 					@include rem(font-size, 1rem);
 				}
 				.alumni-designation{
 					@include rem(margin-right, 2rem);					
+				}
+			}
+			&.header-program{
+				p{
+					padding-top: 0px;
+					@include rem(font-size, 1rem);
+				}
+				.program-schedule{
+					@include rem(margin-right, 2rem);	
 				}
 			}
 		}
