@@ -5,7 +5,8 @@ var gulp = require('gulp');
 
 // load plugins
 var $ = require('gulp-load-plugins')();
-// var pngquant = require('imagemin-pngquant');
+var svg2png = require('gulp-svg2png');
+var pngquant = require('imagemin-pngquant');
 var gulpif = require('gulp-if');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
@@ -117,8 +118,8 @@ gulp.task('images', ['svg'], function () {
         .pipe($.imagemin({
             optimizationLevel: 3,
             progressive: true,
-            interlaced: true
-            //use: [pngquant()]
+            interlaced: true,
+            use: [pngquant()]
         }))
         .pipe(gulp.dest('images'))
         .pipe($.size());
