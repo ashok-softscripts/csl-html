@@ -2,15 +2,15 @@
     &_date {
         @include svg-frame(16, 16);
         display: inline-block;
-        margin-right: 0.2em;
-        width: 14/17 * 1em;
+        margin-right: 0.4em;
+        width: 16/16 * 1em;
     }
 	&_time {
         @include svg-frame(16, 16);
         display: inline-block;
-        margin-right: 0.2em;
+        margin-right: 0.4em;
 		margin-left: 1em;
-        width: 14/17 * 1em;
+        width: 16/16 * 1em;
     }
     &_back {
         @include svg-frame(12, 14);

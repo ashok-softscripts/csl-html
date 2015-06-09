@@ -1243,8 +1243,8 @@ svg {
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   display: inline-block;
-  margin-right: 0.2em;
-  width: 0.8235294118em;
+  margin-right: 0.4em;
+  width: 1em;
 }
 .icon_date:before {
   content: "";
@@ -1265,9 +1265,9 @@ svg {
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   display: inline-block;
-  margin-right: 0.2em;
+  margin-right: 0.4em;
   margin-left: 1em;
-  width: 0.8235294118em;
+  width: 1em;
 }
 .icon_time:before {
   content: "";
