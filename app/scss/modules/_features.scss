@@ -70,14 +70,15 @@
 				background-color: site-color(white);
 				border: none;
 				margin-left: -0.5rem;
-				margin-bottom: 1rem;
+				margin-bottom: 1rem;				
 			}
 			input[type="submit"], button{
 				color: site-color(blue);
 				font-weight: bold-of($display-type);
+				font-size: 1vw;
 				background: transparent;				
 				border: none;
-				border-bottom: 1px solid transparentize(site-color(blue), 0.5);
+				border-bottom: 1px solid transparentize(site-color(blue), 0.75);
 				padding: 0px;
 				cursor: pointer;
 			}
@@ -109,7 +110,11 @@
 			blockquote{				
 				p{
 					font-size: 1.4vw;
-					line-height: 1.8rem;					
+					line-height: 1.8rem;
+					&:before{
+						left: -0.38em;
+						font-size: 3.4em;
+					}
 				}
 			}
 			.arrow-link{

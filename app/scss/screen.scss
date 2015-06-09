@@ -12,6 +12,7 @@ $debug-allow: true;
 @import "base/toolsets/toolset__units";
 @import "base/toolsets/toolset__misc";
 
+
 // import site base
 @import "base/reset";
 @import "base/variables";
@@ -21,10 +22,12 @@ $debug-allow: true;
 // Siegmeyer 2 new typography defaults
 @import "base/typography";
 @import "base/globals";
+@import "base/filters";
 
 // Import all modules
 @import "modules/nav";
 @import "modules/header";
+@import "modules/pre-footer";
 @import "modules/footer";
 @import "modules/arrows-nav";
 @import "modules/icons";
@@ -34,7 +37,6 @@ $debug-allow: true;
 @import "modules/faq-section";
 @import "modules/features";
 @import "modules/news-items";
-@import "modules/filter-effects";
 @import "modules/partners";
 @import "modules/general-content";
 @import "modules/pagination";

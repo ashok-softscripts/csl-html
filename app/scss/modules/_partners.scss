@@ -1,10 +1,8 @@
 .partners-section{
+	@include rem(margin-bottom, 1.5rem);
 	.container{
 		background: site-color(blue_ver_light);
-		@include rem(padding-top, 4rem);
-		@include rem(padding-bottom, 4rem);
-		@include rem(padding-left, 2.25rem);
-		@include rem(padding-right, 2.25rem);
+		@include rem(padding, 3rem);
 	}
 	h2{
 		@include rem(padding-bottom, 1.8rem);
@@ -20,14 +18,20 @@
 }
 .partners{
 	@include clearfix;	
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
 	&__item{
 		float: left;
-		@include span(3 of 12);
-		@include rem(padding-left, 0.75rem);
-		@include rem(padding-right, 0.75rem);
-		@include rem(margin-bottom, 2rem);
-		box-sizing: border-box;
+		width: 23.44%;
+		padding: 0px;
+		border: 0px;
+		margin-right: 2.08%;
+		@include rem(margin-bottom, 4.75rem);
 		display: table;
+		&:nth-child(4n){
+			margin-right: 0px;
+		}
 		a{
 			background: none;
 			display: table-cell;
