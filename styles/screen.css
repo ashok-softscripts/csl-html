@@ -179,8 +179,8 @@ a {
   -webkit-font-smoothing: antialiased;
   color: #006d81;
   text-decoration: none;
-  background-image: -webkit-linear-gradient(top, transparent 50%, rgba(0, 109, 129, 0.6) 50%);
-  background-image: linear-gradient(to bottom, transparent 50%, rgba(0, 109, 129, 0.6) 50%);
+  background-image: -webkit-linear-gradient(top, transparent 50%, rgba(0, 109, 129, 0.25) 50%);
+  background-image: linear-gradient(to bottom, transparent 50%, rgba(0, 109, 129, 0.25) 50%);
   background-repeat: repeat-x;
   background-size: 2px 2px;
   background-position: 0 98%;
@@ -232,8 +232,8 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   -webkit-font-smoothing: antialiased;
   color: #31555c;
   text-decoration: none;
-  background-image: -webkit-linear-gradient(top, transparent 50%, rgba(49, 85, 92, 0.6) 50%);
-  background-image: linear-gradient(to bottom, transparent 50%, rgba(49, 85, 92, 0.6) 50%);
+  background-image: -webkit-linear-gradient(top, transparent 50%, rgba(49, 85, 92, 0.25) 50%);
+  background-image: linear-gradient(to bottom, transparent 50%, rgba(49, 85, 92, 0.25) 50%);
   background-repeat: repeat-x;
   background-size: 2px 2px;
   background-position: 0 98%;
@@ -898,8 +898,8 @@ svg {
   -webkit-font-smoothing: antialiased;
   color: #31555c;
   text-decoration: none;
-  background-image: -webkit-linear-gradient(top, transparent 50%, rgba(49, 85, 92, 0.6) 50%);
-  background-image: linear-gradient(to bottom, transparent 50%, rgba(49, 85, 92, 0.6) 50%);
+  background-image: -webkit-linear-gradient(top, transparent 50%, rgba(49, 85, 92, 0.25) 50%);
+  background-image: linear-gradient(to bottom, transparent 50%, rgba(49, 85, 92, 0.25) 50%);
   background-repeat: repeat-x;
   background-size: 2px 2px;
   background-position: 0 98%;
@@ -1104,8 +1104,8 @@ svg {
   -webkit-font-smoothing: antialiased;
   color: #006d81;
   text-decoration: none;
-  background-image: -webkit-linear-gradient(top, transparent 50%, rgba(0, 109, 129, 0.6) 50%);
-  background-image: linear-gradient(to bottom, transparent 50%, rgba(0, 109, 129, 0.6) 50%);
+  background-image: -webkit-linear-gradient(top, transparent 50%, rgba(0, 109, 129, 0.25) 50%);
+  background-image: linear-gradient(to bottom, transparent 50%, rgba(0, 109, 129, 0.25) 50%);
   background-repeat: repeat-x;
   background-size: 2px 2px;
   background-position: 0 98%;
@@ -1457,8 +1457,8 @@ svg {
   -webkit-font-smoothing: antialiased;
   color: #fff;
   text-decoration: none;
-  background-image: -webkit-linear-gradient(top, transparent 50%, rgba(255, 255, 255, 0.6) 50%);
-  background-image: linear-gradient(to bottom, transparent 50%, rgba(255, 255, 255, 0.6) 50%);
+  background-image: -webkit-linear-gradient(top, transparent 50%, rgba(255, 255, 255, 0.25) 50%);
+  background-image: linear-gradient(to bottom, transparent 50%, rgba(255, 255, 255, 0.25) 50%);
   background-repeat: repeat-x;
   background-size: 2px 2px;
   background-position: 0 98%;
@@ -1605,8 +1605,8 @@ svg {
   -webkit-font-smoothing: antialiased;
   color: #fff;
   text-decoration: none;
-  background-image: -webkit-linear-gradient(top, transparent 50%, rgba(255, 255, 255, 0.6) 50%);
-  background-image: linear-gradient(to bottom, transparent 50%, rgba(255, 255, 255, 0.6) 50%);
+  background-image: -webkit-linear-gradient(top, transparent 50%, rgba(255, 255, 255, 0.25) 50%);
+  background-image: linear-gradient(to bottom, transparent 50%, rgba(255, 255, 255, 0.25) 50%);
   background-repeat: repeat-x;
   background-size: 2px 2px;
   background-position: 0 98%;
@@ -1696,8 +1696,8 @@ svg {
   -webkit-font-smoothing: antialiased;
   color: #006d81;
   text-decoration: none;
-  background-image: -webkit-linear-gradient(top, transparent 50%, rgba(0, 109, 129, 0.6) 50%);
-  background-image: linear-gradient(to bottom, transparent 50%, rgba(0, 109, 129, 0.6) 50%);
+  background-image: -webkit-linear-gradient(top, transparent 50%, rgba(0, 109, 129, 0.25) 50%);
+  background-image: linear-gradient(to bottom, transparent 50%, rgba(0, 109, 129, 0.25) 50%);
   background-repeat: repeat-x;
   background-size: 2px 2px;
   background-position: 0 98%;
@@ -1725,8 +1725,8 @@ svg {
   -webkit-font-smoothing: antialiased;
   color: #fff;
   text-decoration: none;
-  background-image: -webkit-linear-gradient(top, transparent 50%, rgba(255, 255, 255, 0.6) 50%);
-  background-image: linear-gradient(to bottom, transparent 50%, rgba(255, 255, 255, 0.6) 50%);
+  background-image: -webkit-linear-gradient(top, transparent 50%, rgba(255, 255, 255, 0.25) 50%);
+  background-image: linear-gradient(to bottom, transparent 50%, rgba(255, 255, 255, 0.25) 50%);
   background-repeat: repeat-x;
   background-size: 2px 2px;
   background-position: 0 98%;
@@ -2279,8 +2279,8 @@ section .alumni-picture {
   -webkit-font-smoothing: antialiased;
   color: #31555c;
   text-decoration: none;
-  background-image: -webkit-linear-gradient(top, transparent 50%, rgba(49, 85, 92, 0.6) 50%);
-  background-image: linear-gradient(to bottom, transparent 50%, rgba(49, 85, 92, 0.6) 50%);
+  background-image: -webkit-linear-gradient(top, transparent 50%, rgba(49, 85, 92, 0.25) 50%);
+  background-image: linear-gradient(to bottom, transparent 50%, rgba(49, 85, 92, 0.25) 50%);
   background-repeat: repeat-x;
   background-size: 2px 2px;
   background-position: 0 98%;
