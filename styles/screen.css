@@ -2257,30 +2257,30 @@ section .alumni-picture {
   font-weight: 400;
 }
 
-.sectionsNav {
+.indexnav {
   float: right;
   margin-right: 13px;
   margin-right: 1rem;
 }
-.sectionsNav.fixed {
+.indexnav.fixed {
   position: fixed;
   top: 10%;
   right: 200px;
   z-index: 1000;
 }
-.sectionsNav__list {
+.indexnav__list {
   list-style: none;
   padding: 0px;
   margin: 0px 0px 1em;
 }
-.sectionsNav__item {
+.indexnav__item {
   padding: 0px 0px 10px;
 }
-.sectionsNav__link {
+.indexnav__link {
   font-weight: bold;
   outline: none !important;
 }
-.sectionsNav__link.current {
+.indexnav__link.is-active {
   font-family: TradeGothicLTStd, sans-serif;
   -webkit-font-smoothing: antialiased;
   color: #31555c;
@@ -2294,15 +2294,15 @@ section .alumni-picture {
   transition: color .1s ease, background .5s ease, outline 0.25s ease;
   position: relative;
 }
-.sectionsNav__link.current:hover {
+.indexnav__link.is-active:hover {
   color: #31555c;
   background-image: -webkit-linear-gradient(top, transparent 50%, rgba(49, 85, 92, 0.25) 50%);
   background-image: linear-gradient(to bottom, transparent 50%, rgba(49, 85, 92, 0.25) 50%);
 }
-.sectionsNav__link.current.stealth-link {
+.indexnav__link.is-active.stealth-link {
   background-image: none;
 }
-.sectionsNav__link.current:before {
+.indexnav__link.is-active:before {
   content: "";
   display: inline-block;
   width: 5px;

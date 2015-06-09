@@ -49,7 +49,7 @@ $(function() {
 	var $programs_title = $('.programs h3');
 	var $programs_excerpt = $('.programs__excerpt');		
 	var $programs_item = $('.programs__item');
-	var $section_nav = $('.sectionsNav');
+	var $indexnav = $('.indexnav');
 	var $section_overview = $('#overview');
 	var $injectedSVGs = $('img.inject-me');
 	var $instructors_item = $('.instructors__item');
@@ -61,7 +61,7 @@ $(function() {
 			$('#primary-nav').toggleClass('nav--open');
 			$('.content').toggleClass('content--has-nav');			
 			adjustHeight();
-			setSectionNav();
+			setIndexnav();
 			offsetContainer();
 			return false;	
 		});
@@ -80,11 +80,11 @@ $(function() {
 	    }
 	  });
 	
-	if ($section_nav.length > 0) {	
-		$($section_nav).find('.sectionsNav__link').click(function(){
+	if ($indexnav.length > 0) {	
+		$($indexnav).find('.indexnav__link').click(function(){
 			var section_id = $(this).attr('href');
-			$($section_nav).find('.sectionsNav__link').removeClass('current');
-			$(this).addClass('current');
+			$($indexnav).find('.indexnav__link').removeClass('is-active');
+			$(this).addClass('is-active');
 		});
 	}
 	function adjustHeight(){
@@ -135,12 +135,12 @@ $(function() {
 				
 	}
 	
-	function setSectionNav(){
-		if ($section_nav.length > 0) {
+	function setIndexnav(){
+		if ($indexnav.length > 0) {
 			var page_width = $page.width();
 			var cont_width = $container.width();
 			var p_right = parseInt(page_width - cont_width)/2;
-			$section_nav.css('right', p_right);
+			$indexnav.css('right', p_right);
 		}
 	}
 	
@@ -161,7 +161,7 @@ $(function() {
 	
 	// init resize functions
 	function resizeUpdates(){
-		setSectionNav();
+		setIndexnav();
 		offsetContainer();
 	}
 	
@@ -181,16 +181,16 @@ $(function() {
         pngFallback: '.'
     });
 	
-	if (($section_overview.length > 0) && ($section_nav.length > 0) ) {
+	if (($section_overview.length > 0) && ($indexnav.length > 0) ) {
 		var firstScrollTop = $section_overview.offset().top;
-		var lastSection = $section_nav.find('.sectionsNav__item:last-child').children('a').attr('href');
+		var lastSection = $indexnav.find('.indexnav__item:last-child').children('a').attr('href');
 		var lastScrollTop = $(lastSection).offset().top + ($(lastSection).height()/2); 
 		$(window).scroll(function(event){
 			var st = jQuery(this).scrollTop();
 			if (st > firstScrollTop && st < lastScrollTop){
-				$section_nav.addClass('fixed');
+				$indexnav.addClass('fixed');
 			} else {
-				$section_nav.removeClass('fixed');
+				$indexnav.removeClass('fixed');
 			} 
 			
 		});       

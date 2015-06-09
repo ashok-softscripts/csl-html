@@ -1,4 +1,4 @@
-.sectionsNav{	
+.indexnav{	
 	float: right;
 	@include rem(margin-right, 1rem);
 	&.fixed{
@@ -18,7 +18,7 @@
 	&__link{
 		font-weight: bold-of($body-type);
 		outline: none !important;
-		&.current{
+		&.is-active{
 			@include text-link(site-color(blue_dark));
 			position: relative;
 			&:before{
