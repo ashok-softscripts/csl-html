@@ -263,6 +263,7 @@ h1, .h1-style {
   padding-top: 0.60241rem;
   margin-bottom: -7.83133px;
   margin-bottom: -0.60241rem;
+  font-weight: 300;
 }
 @media screen and (min-width: 30em) {
   h1, .h1-style {
