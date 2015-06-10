@@ -106,7 +106,7 @@ caption, th, td {
   }
 }
 
-.icon_date > svg, .icon_time > svg, .icon_back > svg {
+.header .container .logo > svg, .header .container .logo > img, .icon_date > svg, .icon_date > img, .icon_time > svg, .icon_time > img, .icon_back > svg, .icon_back > img {
   width: 100%;
   position: absolute;
   top: 0;
@@ -257,99 +257,99 @@ h1, .h1-style {
   border-top: 1rem solid transparent;
   border-bottom: 13px solid transparent;
   border-bottom: 1rem solid transparent;
-  font-size: 41.6px;
-  font-size: 3.2rem;
-  padding-top: 5.77213px;
-  padding-top: 0.44401rem;
-  margin-bottom: -5.77213px;
-  margin-bottom: -0.44401rem;
+  font-size: 35.36px;
+  font-size: 2.72rem;
+  padding-top: 7.83133px;
+  padding-top: 0.60241rem;
+  margin-bottom: -7.83133px;
+  margin-bottom: -0.60241rem;
 }
 @media screen and (min-width: 30em) {
   h1, .h1-style {
-    line-height: 42px;
-    line-height: 3rem;
-    font-size: 48.5333333333px;
-    font-size: 3.4666666667rem;
-    padding-top: 4.98414px;
-    padding-top: 0.35601rem;
-    margin-bottom: -4.98414px;
-    margin-bottom: -0.35601rem;
+    line-height: 56px;
+    line-height: 4rem;
+    font-size: 45.22px;
+    font-size: 3.23rem;
+    padding-top: 6.07754px;
+    padding-top: 0.43411rem;
+    margin-bottom: -6.07754px;
+    margin-bottom: -0.43411rem;
   }
 }
 @media screen and (min-width: 47.9375em) {
   h1, .h1-style {
-    line-height: 45px;
-    line-height: 3rem;
-    font-size: 56.0px;
-    font-size: 3.7333333333rem;
-    padding-top: 4.02015px;
-    padding-top: 0.26801rem;
-    margin-bottom: -4.02015px;
-    margin-bottom: -0.26801rem;
+    line-height: 60px;
+    line-height: 4rem;
+    font-size: 56.1px;
+    font-size: 3.74rem;
+    padding-top: 3.98715px;
+    padding-top: 0.26581rem;
+    margin-bottom: -3.98715px;
+    margin-bottom: -0.26581rem;
   }
 }
 @media screen and (min-width: 67.5em) {
   h1, .h1-style {
-    line-height: 68px;
-    line-height: 4rem;
-    font-size: 68.0px;
-    font-size: 4.0rem;
-    padding-top: 3.06017px;
-    padding-top: 0.18001rem;
-    margin-bottom: -3.06017px;
-    margin-bottom: -0.18001rem;
+    line-height: 85px;
+    line-height: 5rem;
+    font-size: 72.25px;
+    font-size: 4.25rem;
+    padding-top: 1.65767px;
+    padding-top: 0.09751rem;
+    margin-bottom: -1.65767px;
+    margin-bottom: -0.09751rem;
   }
 }
 
 h2, .h2-style {
-  line-height: 32.5px;
-  line-height: 2.5rem;
-  border-top: 13px solid transparent;
-  border-top: 1rem solid transparent;
+  line-height: 26px;
+  line-height: 2rem;
+  border-top: 26px solid transparent;
+  border-top: 2rem solid transparent;
   border-bottom: 13px solid transparent;
   border-bottom: 1rem solid transparent;
-  font-size: 26px;
-  font-size: 2rem;
-  padding-top: 7.67013px;
-  padding-top: 0.59001rem;
-  margin-bottom: -7.67013px;
-  margin-bottom: -0.59001rem;
+  font-size: 17.55px;
+  font-size: 1.35rem;
+  padding-top: 7.20863px;
+  padding-top: 0.55451rem;
+  margin-bottom: -7.20863px;
+  margin-bottom: -0.55451rem;
   font-weight: bold;
 }
 @media screen and (min-width: 30em) {
   h2, .h2-style {
-    line-height: 42px;
-    line-height: 3rem;
-    font-size: 29.2133333333px;
-    font-size: 2.0866666667rem;
-    padding-top: 7.85974px;
-    padding-top: 0.56141rem;
-    margin-bottom: -7.85974px;
-    margin-bottom: -0.56141rem;
+    line-height: 28px;
+    line-height: 2rem;
+    font-size: 22.44375px;
+    font-size: 1.603125rem;
+    padding-top: 6.5937025px;
+    padding-top: 0.47097875rem;
+    margin-bottom: -6.5937025px;
+    margin-bottom: -0.47097875rem;
   }
 }
 @media screen and (min-width: 47.9375em) {
   h2, .h2-style {
     line-height: 45px;
     line-height: 3rem;
-    font-size: 32.6px;
-    font-size: 2.1733333333rem;
-    padding-top: 7.99215px;
-    padding-top: 0.53281rem;
-    margin-bottom: -7.99215px;
-    margin-bottom: -0.53281rem;
+    font-size: 27.84375px;
+    font-size: 1.85625rem;
+    padding-top: 5.8117125px;
+    padding-top: 0.3874475rem;
+    margin-bottom: -5.8117125px;
+    margin-bottom: -0.3874475rem;
   }
 }
 @media screen and (min-width: 67.5em) {
   h2, .h2-style {
     line-height: 51px;
     line-height: 3rem;
-    font-size: 38.42px;
-    font-size: 2.26rem;
-    padding-top: 8.57157px;
-    padding-top: 0.50421rem;
-    margin-bottom: -8.57157px;
-    margin-bottom: -0.50421rem;
+    font-size: 35.859375px;
+    font-size: 2.109375rem;
+    padding-top: 5.16657625px;
+    padding-top: 0.30391625rem;
+    margin-bottom: -5.16657625px;
+    margin-bottom: -0.30391625rem;
   }
 }
 
@@ -360,12 +360,12 @@ h3, .h3-style {
   border-top: 1rem solid transparent;
   border-bottom: 13px solid transparent;
   border-bottom: 1rem solid transparent;
-  font-size: 19.5px;
-  font-size: 1.5rem;
-  padding-top: 6.56513px;
-  padding-top: 0.50501rem;
-  margin-bottom: -6.56513px;
-  margin-bottom: -0.50501rem;
+  font-size: 18.2px;
+  font-size: 1.4rem;
+  padding-top: 6.99413px;
+  padding-top: 0.53801rem;
+  margin-bottom: -6.99413px;
+  margin-bottom: -0.53801rem;
 }
 
 h4, .h4-style {
@@ -847,12 +847,15 @@ svg {
 .nav {
   position: fixed;
   z-index: 99;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
 }
 .nav__badge {
   display: inline-block;
-  padding: 23px 23px 17px;
+  padding: 17.589px;
+  padding: 1.353rem;
+  padding-bottom: 13px;
+  padding-bottom: 1rem;
   background: #e8f3f5;
   line-height: normal;
   cursor: pointer;
@@ -865,58 +868,59 @@ svg {
   font-size: 1rem;
 }
 .nav__badge a span {
-  /*@include rem(width, 1.063rem);
-  @include rem(height, 0.1875rem);*/
-  width: 17px;
-  height: 3px;
+  width: 13px;
+  width: 1rem;
+  height: 2.2945px;
+  height: 0.1765rem;
   background: #006d81;
   display: inline-block;
   vertical-align: middle;
   position: relative;
-  /*@include rem(margin-top, 0.1875rem);*/
-  margin-top: -4px;
+  margin-top: -3.0589px;
+  margin-top: -0.2353rem;
+  margin-right: 5.3534px;
+  margin-right: 0.4118rem;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
-  margin-right: 7px;
 }
 .nav__badge a span:before, .nav__badge a span:after {
   display: block;
   position: absolute;
   content: "";
-  /*@include rem(top, -0.4375rem);					
-  @include rem(width, 1.063rem);
-  @include rem(height, 0.1875rem);*/
-  width: 17px;
-  height: 3px;
-  top: -7px;
+  width: 13px;
+  width: 1rem;
+  height: 2.2945px;
+  height: 0.1765rem;
+  top: -5.3534px;
+  top: -0.4118rem;
   background: #006d81;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
 .nav__badge a span:after {
-  /*@include rem(top, 0.4375rem);*/
-  top: 7px;
-}
-.nav__badge a:after {
-  bottom: -1px;
+  top: 5.3534px;
+  top: 0.4118rem;
 }
 .nav__badge:hover {
   background: #b5dfdc;
 }
 .nav__list {
-  padding-left: 38.194px;
-  padding-left: 2.938rem;
+  padding-left: 35.945px;
+  padding-left: 2.765rem;
   list-style: none;
-  padding-top: 22px;
-  padding-bottom: 22px;
+  padding-top: 16.822px;
+  padding-top: 1.294rem;
+  padding-bottom: 16.822px;
+  padding-bottom: 1.294rem;
   display: none;
 }
 .nav__item {
   display: block;
-  padding: 0px;
-  margin: 0px;
-  margin-bottom: 22px;
-  border: 0px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 16.822px;
+  margin-bottom: 1.294rem;
+  border: 0;
   text-align: left;
   line-height: normal;
 }
@@ -946,7 +950,8 @@ svg {
   background-image: none;
 }
 .nav--smaller .nav__item {
-  margin-bottom: 17px;
+  margin-bottom: 13px;
+  margin-bottom: 1rem;
 }
 .nav--smaller .nav__link {
   font-size: 13px;
@@ -965,13 +970,13 @@ svg {
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
-  top: 0px !important;
+  top: 0 !important;
 }
 .nav--open .nav__badge a span:after {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
-  top: 0px !important;
+  top: 0 !important;
 }
 .nav--open .nav__list {
   display: block;
@@ -979,30 +984,37 @@ svg {
 
 .header {
   background: #f3f9fa;
-  padding-top: 50px;
-  padding-bottom: 110px;
+  padding-top: 40.625px;
+  padding-top: 3.125rem;
+  padding-bottom: 89.375px;
+  padding-bottom: 6.875rem;
 }
 .header .container .logo {
   float: right;
-}
-.header .container .logo a {
+  width: 220.22px;
+  width: 16.94rem;
   display: block;
-  width: 271px;
-  height: 212px;
   margin: 0;
   padding: 0;
   border: 0;
-  text-indent: -999em;
-  background-image: url(../images/logo.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
   outline: none !important;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  border-bottom: 0 none;
+  background-image: none !important;
+  overflow: hidden;
+  position: relative;
+  display: block;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  z-index: 90;
+  position: relative;
 }
-.no-svg .header .container .logo a {
-  background-image: url(../images/logo.png);
-}
-.header .container .logo a:after {
-  display: none;
+.header .container .logo:before {
+  content: "";
+  display: block;
+  height: 0;
+  padding-top: 79.1122715405%;
 }
 .header .container .header-intro {
   padding-top: 10rem;
@@ -1012,7 +1024,7 @@ svg {
   padding-top: 7.5rem;
 }
 .header .container .header-intro.header-alumni p {
-  padding-top: 0px;
+  padding-top: 0;
   font-size: 13px;
   font-size: 1rem;
 }
@@ -1021,7 +1033,7 @@ svg {
   margin-right: 2rem;
 }
 .header .container .header-intro.header-program p {
-  padding-top: 0px;
+  padding-top: 0;
   font-size: 13px;
   font-size: 1rem;
 }
@@ -1086,7 +1098,9 @@ svg {
 .pre-footer .footer-menu li {
   padding: 0px;
   border-bottom: 0px;
-  margin: 0px 0px 10px;
+  margin: 0px;
+  margin-bottom: 7.6466px;
+  margin-bottom: 0.5882rem;
 }
 .pre-footer .get-in-touch {
   margin-bottom: 39px;
@@ -1108,13 +1122,12 @@ svg {
   float: right;
 }
 .pre-footer .get-in-touch .social-networks a {
-  margin-left: 5px;
+  margin-left: 3.8233px;
+  margin-left: 0.2941rem;
 }
-.pre-footer .get-in-touch .social-networks a img {
-  max-width: 24px;
-}
-.pre-footer .get-in-touch .social-networks a:after {
-  display: none;
+.pre-footer .get-in-touch .social-networks a img, .pre-footer .get-in-touch .social-networks a svg {
+  max-width: 18.356px;
+  max-width: 1.412rem;
 }
 .pre-footer .location {
   float: left;
@@ -1192,17 +1205,19 @@ svg {
 }
 
 .arrows-nav {
-  margin-top: 25px;
+  margin-top: 20.319px;
+  margin-top: 1.563rem;
 }
 .arrows-nav__list {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   list-style: none;
   display: inline-block;
-  margin-right: 50px;
+  margin-right: 40.625px;
+  margin-right: 3.125rem;
 }
 .arrows-nav__item {
-  padding: 0px;
+  padding: 0;
 }
 .arrows-nav__item:before {
   content: "";
@@ -1210,8 +1225,10 @@ svg {
   width: 5px;
   height: 10px;
   background: url(../images/arrows/t-arrow.png) no-repeat left center;
-  margin-left: -13px;
-  margin-right: 13px;
+  margin-left: -10.5625px;
+  margin-left: -0.8125rem;
+  margin-right: 10.5625px;
+  margin-right: 0.8125rem;
 }
 .arrows-nav__link {
   font-size: 14.625px;
@@ -1220,7 +1237,7 @@ svg {
 }
 
 .arrow-link {
-  padding-top: 0px;
+  padding-top: 0;
   -webkit-transition: all 2s ease;
   transition: all 2s ease;
 }
@@ -1229,6 +1246,7 @@ svg {
   width: 20px;
   height: 17px;
   display: inline-block;
+  margin-left: 6.5px;
   margin-left: 0.5rem;
   background: url(../images/arrows/arrow-blue.png) no-repeat right center;
 }
@@ -1252,12 +1270,6 @@ svg {
   height: 0;
   padding-top: 100%;
 }
-.icon_date img {
-  opacity: 0;
-}
-.icon_date img[src$=".png"] {
-  opacity: 1;
-}
 .icon_time {
   overflow: hidden;
   position: relative;
@@ -1274,12 +1286,6 @@ svg {
   display: block;
   height: 0;
   padding-top: 100%;
-}
-.icon_time img {
-  opacity: 0;
-}
-.icon_time img[src$=".png"] {
-  opacity: 1;
 }
 .icon_back {
   overflow: hidden;
@@ -1298,12 +1304,6 @@ svg {
   display: block;
   height: 0;
   padding-top: 116.6666666667%;
-}
-.icon_back img {
-  opacity: 0;
-}
-.icon_back img[src$=".png"] {
-  opacity: 1;
 }
 .button .icon_back {
   width: 0.7058823529em;
@@ -1591,14 +1591,14 @@ svg {
   margin-right: 2.08%;
 }
 .features__block:last-child {
-  margin-right: 0px;
+  margin-right: 0;
 }
 .features__block .image-overlay {
   position: absolute;
   width: 100%;
   height: 100%;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-filter: grayscale(100%) sepia(100%);
@@ -1683,7 +1683,7 @@ svg {
   background: transparent;
   border: none;
   border-bottom: 1px solid rgba(0, 109, 129, 0.25);
-  padding: 0px;
+  padding: 0;
   cursor: pointer;
 }
 .features__block.testimonial {
@@ -1707,12 +1707,12 @@ svg {
   box-sizing: border-box;
   padding: 39px;
   padding: 3rem;
-  margin: 0px;
+  margin: 0;
 }
 .features__block.testimonial h3 {
   font-weight: bold;
-  border: 0px;
-  padding: 0px;
+  border: 0;
+  padding: 0;
   font-size: 1.4vw;
 }
 .features__block.testimonial blockquote p {
@@ -1841,13 +1841,13 @@ svg {
 .news__item {
   float: left;
   width: 23.44%;
-  padding: 0px;
+  padding: 0;
   margin-right: 2.08%;
   margin-bottom: 61.75px;
   margin-bottom: 4.75rem;
 }
 .news__item:nth-child(4n) {
-  margin-right: 0px;
+  margin-right: 0;
 }
 .news__cover {
   overflow: hidden;
@@ -1964,11 +1964,15 @@ svg {
 }
 .pagination ul {
   list-style: none;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 .pagination ul li {
-  padding: 0px 12px;
+  padding: 0;
+  padding-left: 9.1767px;
+  padding-left: 0.7059rem;
+  padding-right: 9.1767px;
+  padding-right: 0.7059rem;
   display: inline-block;
   color: #006d81;
   font-size: 19.5px;
@@ -1978,15 +1982,15 @@ svg {
   color: #31555c;
 }
 .pagination ul li.more {
-  padding: 0px;
+  padding: 0;
 }
 .pagination ul li.prev {
   position: absolute;
-  left: 0px;
+  left: 0;
 }
 .pagination ul li.next {
   position: absolute;
-  right: 0px;
+  right: 0;
 }
 
 .alumni:before, .alumni:after {
@@ -2006,7 +2010,7 @@ svg {
   margin-bottom: 4.75rem;
 }
 .alumni__item:nth-child(3n) {
-  margin-right: 0px;
+  margin-right: 0;
 }
 .alumni__cover {
   overflow: hidden;
@@ -2084,6 +2088,9 @@ svg {
   font-size: 1rem;
   line-height: 1.5rem;
 }
+.alumni__type {
+  font-weight: 400;
+}
 .alumni h3 {
   font-weight: bold;
 }
@@ -2097,7 +2104,7 @@ section .alumni-content blockquote p {
   font-size: 29.25px;
   font-size: 2.25rem;
   line-height: 3rem;
-  padding-left: 0px;
+  padding-left: 0;
 }
 section .alumni-content blockquote p:before {
   color: rgba(243, 111, 67, 0.15);
@@ -2155,11 +2162,14 @@ section .alumni-picture {
 .programs__item.is-open .programs__status:before {
   content: "";
   display: inline-block;
-  width: 12px;
-  height: 12px;
+  width: 9.1767px;
+  width: 0.7059rem;
+  height: 9.1767px;
+  height: 0.7059rem;
   background-color: #008266;
   border-radius: 50%;
-  margin-right: 8px;
+  margin-right: 6.1178px;
+  margin-right: 0.4706rem;
 }
 .programs__item.is-closed {
   opacity: 0.7;
@@ -2170,10 +2180,13 @@ section .alumni-picture {
 .programs__item.is-closed .programs__status:before {
   content: "";
   display: inline-block;
-  width: 10px;
-  height: 10px;
+  width: 7.6466px;
+  width: 0.5882rem;
+  height: 7.6466px;
+  height: 0.5882rem;
   background-color: #f36f43;
-  margin-right: 8px;
+  margin-right: 6.1178px;
+  margin-right: 0.4706rem;
 }
 .programs__cover {
   overflow: hidden;
@@ -2265,16 +2278,14 @@ section .alumni-picture {
 .indexnav.fixed {
   position: fixed;
   top: 10%;
-  right: 200px;
+  right: 162.5px;
+  right: 12.5rem;
   z-index: 1000;
 }
 .indexnav__list {
   list-style: none;
-  padding: 0px;
-  margin: 0px 0px 1em;
-}
-.indexnav__item {
-  padding: 0px 0px 10px;
+  padding: 0;
+  margin: 0 0 1.6em;
 }
 .indexnav__link {
   font-weight: bold;
@@ -2309,8 +2320,10 @@ section .alumni-picture {
   height: 10px;
   background: url(../images/arrows/t-arrow.png) no-repeat left center;
   position: absolute;
-  left: -13px;
-  top: 2px;
+  left: -10.5625px;
+  left: -0.8125rem;
+  top: 1.625px;
+  top: 0.125rem;
 }
 
 section .program-content {
@@ -2372,8 +2385,8 @@ section .program-content blockquote p:before {
 .program-format__item:before {
   content: "";
   display: block;
-  width: 16px;
-  height: 16px;
+  width: 1rem;
+  height: 1rem;
   position: absolute;
   left: -1.6em;
   top: 0.2em;
@@ -2420,7 +2433,7 @@ section .program-content blockquote p:before {
   margin-bottom: 4.75rem;
 }
 .instructors__item:nth-child(2n) {
-  margin-right: 0px;
+  margin-right: 0;
 }
 .instructors__cover {
   overflow: hidden;

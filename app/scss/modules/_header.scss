@@ -1,26 +1,22 @@
 .header{
 	background: site-color(blue_ver_light);
-	padding-top: 50px;
-	padding-bottom: 110px;
+	@include rem(padding-top, 3.125rem);
+	@include rem(padding-bottom, 6.875rem);
 	.container{
 		.logo{
 			float: right;
-            a {
-                display: block;
-                width: 271px;
-				height: 212px;
-                margin: 0;
-                padding: 0;
-                border: 0;
-                text-indent: -999em;
-				@include svg-bg(logo);
-				background-repeat: no-repeat;
-				background-size: cover;
-				outline: none !important;
-				&:after{
-					display: none;
-				}
-            }
+			@include rem(width, 16.94rem);
+			display: block;
+			margin: 0;
+			padding: 0;
+			border: 0;
+			outline: none !important;
+			transform: translateZ(0);
+			border-bottom: 0 none;
+			background-image: none !important;
+			@include svg-frame(383, 303);
+			z-index: 90;
+			position: relative;
 		}
 		.header-intro{			
 			padding-top: 10rem;
@@ -30,7 +26,7 @@
 			}
 			&.header-alumni{ // Content Alumni template
 				p{
-					padding-top: 0px;
+					padding-top: 0;
 					@include rem(font-size, 1rem);
 				}
 				.alumni-designation{
@@ -39,7 +35,7 @@
 			}
 			&.header-program{
 				p{
-					padding-top: 0px;
+					padding-top: 0;
 					@include rem(font-size, 1rem);
 				}
 				.program-schedule{

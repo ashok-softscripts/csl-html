@@ -36,10 +36,8 @@
 		li{
 			padding: 0px;
 			border-bottom: 0px;
-			margin: 0px 0px 10px;
-			a{
-				//@include text-link(site-color(blue),site-color(blue_dark),90%);
-			}
+			margin: 0px;
+			@include rem(margin-bottom, 0.5882rem);
 		}
 	}
 	
@@ -53,13 +51,10 @@
 		.social-networks{
 			float: right;
 			a{
-				margin-left: 5px;
-				img{
-					max-width: 24px;
-				}
-				&:after{
-					display: none;
-				}
+				@include rem(margin-left, 0.2941rem);
+				img, svg{
+					@include rem(max-width, 1.412rem);
+				}				
 			}
 		}
 	}

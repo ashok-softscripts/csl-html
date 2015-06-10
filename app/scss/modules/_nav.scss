@@ -1,11 +1,12 @@
 .nav {
-   	position: fixed;
+	position: fixed;
 	z-index: 99;
-	left: 0px;
-	top: 0px;
+	left: 0;
+	top: 0;
 	&__badge {
     	display: inline-block;
-		padding: 23px 23px 17px;
+		@include rem(padding, 1.353rem);
+		@include rem(padding-bottom, 1rem);
 		background: site-color(blue_mid_light);
 		line-height: normal;
 		cursor: pointer;
@@ -14,39 +15,29 @@
 			font-weight: regular-of($display-type);
 			@include rem(font-size, 1rem);
 			span{ 
-				/*@include rem(width, 1.063rem);
-				@include rem(height, 0.1875rem);*/
-				width: 17px;
-				height: 3px;
+				@include rem(width, 1rem);
+				@include rem(height, 0.1765rem);
 				background: site-color(blue);
 				display: inline-block;
 				vertical-align: middle;
 				position: relative;
-				/*@include rem(margin-top, 0.1875rem);*/
-				margin-top: -4px;
+				@include rem(margin-top, -0.2353rem);
+				@include rem(margin-right, 0.4118rem);
 				transition: all 0.2s ease;
-				margin-right: 7px;
 				&:before, &:after{
 					display: block;
 					position: absolute;					
 					content: "";
-					/*@include rem(top, -0.4375rem);					
-					@include rem(width, 1.063rem);
-					@include rem(height, 0.1875rem);*/
-					width: 17px;
-					height: 3px;
-					top: -7px;
+					@include rem(width, 1rem);
+					@include rem(height, 0.1765rem);
+					@include rem(top, -0.4118rem);					
 					background: site-color(blue);
 					transition: all 0.2s ease;
 				}
 				&:after{
-					/*@include rem(top, 0.4375rem);*/
-					top: 7px;
+					@include rem(top, 0.4118rem);					
 				}
-			}
-			&:after{
-				bottom: -1px;
-			}
+			}			
 		}
 		&:hover{
 			background: site-color(blue_light);
@@ -67,19 +58,19 @@
 
 
 	&__list {
-		@include rem(padding-left, 2.938rem);
+		@include rem(padding-left, 2.765rem);
 		list-style: none;
-		padding-top: 22px;
-		padding-bottom: 22px;
+		@include rem(padding-top, 1.294rem);
+		@include rem(padding-bottom, 1.294rem);
 		display: none;
 	}
 
     &__item {
 		display: block;
-		padding: 0px;
-		margin: 0px;
-		margin-bottom: 22px;
-		border: 0px;
+		padding: 0;
+		margin: 0;
+		@include rem(margin-bottom, 1.294rem);
+		border: 0;
 		text-align: left;
 		line-height: normal;
     }
@@ -93,7 +84,7 @@
 	
 	&--smaller{
 		.nav__item{
-			margin-bottom: 17px;
+			@include rem(margin-bottom, 1rem);
 		}
 		.nav__link{
 			@include rem(font-size, 1rem);			
@@ -110,11 +101,11 @@
 					background: transparent;
 					&:before{
 						transform: rotate(-45deg);
-						top: 0px !important;
+						top: 0 !important;
 					}
 					&:after{
 						transform: rotate(45deg);
-						top: 0px !important;
+						top: 0 !important;
 					}
 				}
 			}

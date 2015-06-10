@@ -9,14 +9,14 @@
 		position: relative;
 		margin-right: 2.08%;
 		&:last-child{
-			margin-right: 0px;
+			margin-right: 0;
 		}		
 		.image-overlay{
 			position: absolute;
 			width: 100%;
 			height: 100%;
-			left: 0px;
-			top: 0px;			
+			left: 0;
+			top: 0;			
 			background-repeat: no-repeat;
 			background-size: cover;
 			@include filter_elements(grayscale(100%) sepia(100%));
@@ -79,7 +79,7 @@
 				background: transparent;				
 				border: none;
 				border-bottom: 1px solid transparentize(site-color(blue), 0.75);
-				padding: 0px;
+				padding: 0;
 				cursor: pointer;
 			}
 		}
@@ -99,12 +99,12 @@
 				width: 64%;
 				box-sizing: border-box;
 				@include rem(padding, 3rem);
-				margin: 0px;
+				margin: 0;
 			}
 			h3{
 				font-weight: bold-of($display-type);
-				border: 0px;
-				padding: 0px;
+				border: 0;
+				padding: 0;
 				font-size: 1.4vw;
 			}
 			blockquote{				

@@ -1,22 +1,22 @@
 .arrows-nav{
-	margin-top: 25px;
+	@include rem(margin-top, 1.563rem);
 	&__list{
-		margin: 0px;
-		padding: 0px;
+		margin: 0;
+		padding: 0;
 		list-style: none;
 		display: inline-block;
-		margin-right: 50px;
+		@include rem(margin-right, 3.125rem);
 	}
 	&__item{				
-		padding: 0px;
+		padding: 0;
 		&:before{
 			content: "";
 			display: inline-block;
 			width: 5px;
 			height: 10px;
 			background: url(#{$image-path}/arrows/t-arrow.png) no-repeat left center;
-			margin-left: -13px;
-			margin-right: 13px;
+			@include rem(margin-left, -0.8125rem);
+			@include rem(margin-right, 0.8125rem);
 		}
 	}
 	&__link{
@@ -26,14 +26,14 @@
 }
 
 .arrow-link{
-	padding-top: 0px;	
+	padding-top: 0;	
 	transition: all 2s ease;
 	&:after{
 		content: "";
 		width: 20px;
 		height: 17px;
 		display: inline-block;
-		margin-left: 0.5rem;
+		@include rem(margin-left, 0.5rem);
 		background: url(#{$image-path}/arrows/arrow-blue.png) no-repeat right center;
 	}
 	&.arrow-white{

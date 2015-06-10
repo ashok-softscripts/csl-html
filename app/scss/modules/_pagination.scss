@@ -6,10 +6,12 @@
 	@include rem(margin-bottom, 3rem);
 	ul{
 		list-style: none;
-		margin: 0px;
-		padding: 0px;
+		margin: 0;
+		padding: 0;
 		li{
-			padding: 0px 12px;
+			padding: 0;
+			@include rem(padding-left, 0.7059rem);
+			@include rem(padding-right, 0.7059rem);
 			display: inline-block;
 			color: site-color(blue);
 			@include rem(font-size, 1.5rem);
@@ -17,15 +19,15 @@
 				color: site-color(blue_dark);
 			}
 			&.more{
-				padding: 0px;
+				padding: 0;
 			}
 			&.prev{
 				position: absolute;
-				left: 0px;
+				left: 0;
 			}
 			&.next{
 				position: absolute;
-				right: 0px;
+				right: 0;
 			}
 		}
 	}

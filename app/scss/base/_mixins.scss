@@ -216,17 +216,8 @@
 @mixin svg-frame($w: 1, $h: 1) {
     @include scut-ratio-box($w / $h);
     display: block;
-    transform: translateZ(0);
-
-    img {
-        opacity: 0;
-
-        &[src$=".png"] {
-            opacity: 1;
-        }
-    }
-
-    > svg {
+    transform: translateZ(0);  
+    > svg, > img {
         @extend %svg-fill;
     }
 }

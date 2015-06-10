@@ -86,21 +86,21 @@ h1, h2, h3, h4, h5, h6 {
 
 // Heading level 1.
 h1, .h1-style {
-    // scales up to 4rem (3.2rem * 1.25)
-    @include type($font: $display-type, $fontsize: 3.2rem, $lineheight: 3, $leader: 1, $trailer: 1, $scale-ratio: 1.25);    
+    // scales up to 4.1rem (2.72rem * 25/16)
+    @include type($font: $display-type, $fontsize: 2.72rem, $lineheight: 3, $leader: 1, $trailer: 1, $scale-ratio: 25/16);    
 }
 
 // Heading level 2.
 h2, .h2-style {
-    // scales up to 2.25rem (2rem * 1.13)
-    @include type($display-type, 2rem, 2.5, 1, 1, 1.13);
+    // scales up to ~2.1rem (1.35rem * 25/16)
+    @include type($display-type, 1.35rem, 2, 2, 1, 25/16);
     font-weight: bold-of($display-type);
 }
 
 // Heading level 3.
 h3, .h3-style {
-    // scales up to 1.5rem
-    @include type($display-type, 1.5rem, 2, 1, 1);    
+    // scales up to 1.4rem
+    @include type($display-type, 1.4rem, 2, 1, 1);    
 }
 
 // Heading level 4.

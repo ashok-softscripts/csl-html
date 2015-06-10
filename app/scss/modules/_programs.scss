@@ -21,11 +21,11 @@
 				&:before{
 					content: "";
 					display: inline-block;
-					width: 12px;
-					height: 12px;
+					@include rem(width, 0.7059rem);
+					@include rem(height, 0.7059rem);
 					background-color: site-color(green);
 					border-radius: 50%;
-					margin-right: 8px;
+					@include rem(margin-right, 0.4706rem);
 				}
 			}
 		}
@@ -38,10 +38,10 @@
 				&:before{
 					content: "";
 					display: inline-block;
-					width: 10px;
-					height: 10px;
+					@include rem(width, 0.5882rem);
+					@include rem(height, 0.5882rem);
 					background-color: site-color(orange);
-					margin-right: 8px;
+					@include rem(margin-right, 0.4706rem);
 				}
 			}
 		}
