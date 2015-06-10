@@ -2,23 +2,26 @@
 	background: site-color(blue_ver_light);	
 	@include rem(padding-bottom, 4.2rem);
 	@include clearfix;
-	&__left{
+	.thick-logo{
 		@include span(5 of 12);
 		float: left;
-		&__container{
+		.container{
 			@include rem(max-width, 30.24rem);
-			@include rem(padding-left, 3rem);
 			@include rem(margin-top, 7.41rem);			
 			margin-left: auto;
+			margin-right: 0px;
+			@include rem(padding-left, 3rem);
+			padding-right: 0px;
 			box-sizing: border-box;			
 		}
 	}
-	&__right{
+	.csl-footer-logo{
 		@include span(7 of 12);
 		float: left;
 		background: site-color(blue_mid_light);
-		&__container{
+		.container{
 			@include rem(margin-top, 1.765rem);
+			padding: 0px;
 			img{
 				@include rem(max-width, 17rem);
 			}

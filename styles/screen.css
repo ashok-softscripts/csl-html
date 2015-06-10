@@ -1199,33 +1199,36 @@ svg {
 .footer:after {
   clear: both;
 }
-.footer__left {
+.footer .thick-logo {
   width: 41.6666666667%;
   float: left;
   float: left;
 }
-.footer__left__container {
+.footer .thick-logo .container {
   max-width: 393.12px;
   max-width: 30.24rem;
-  padding-left: 39px;
-  padding-left: 3rem;
   margin-top: 96.33px;
   margin-top: 7.41rem;
   margin-left: auto;
+  margin-right: 0px;
+  padding-left: 39px;
+  padding-left: 3rem;
+  padding-right: 0px;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-.footer__right {
+.footer .csl-footer-logo {
   width: 58.3333333333%;
   float: left;
   float: left;
   background: #e8f3f5;
 }
-.footer__right__container {
+.footer .csl-footer-logo .container {
   margin-top: 22.945px;
   margin-top: 1.765rem;
+  padding: 0px;
 }
-.footer__right__container img {
+.footer .csl-footer-logo .container img {
   max-width: 221px;
   max-width: 17rem;
 }
