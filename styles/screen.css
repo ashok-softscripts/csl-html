@@ -1692,7 +1692,7 @@ svg {
 }
 .features__block.testimonial .alumni-image {
   float: right;
-  width: 36%;
+  width: 34%;
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   filter: grayscale(100%);
@@ -1703,22 +1703,25 @@ svg {
 }
 .features__block.testimonial .text {
   float: left;
-  width: 64%;
+  width: 66%;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 39px;
   padding: 3rem;
+  padding-top: 47.411px;
+  padding-top: 3.647rem;
+  padding-bottom: 58.123px;
+  padding-bottom: 4.471rem;
   margin: 0;
 }
 .features__block.testimonial h3 {
   font-weight: bold;
   border: 0;
   padding: 0;
-  font-size: 1.4vw;
 }
-.features__block.testimonial blockquote p {
-  font-size: 1.4vw;
-  line-height: 1.8rem;
+.features__block.testimonial blockquote {
+  padding-bottom: 58.123px;
+  padding-bottom: 4.471rem;
 }
 .features__block.testimonial blockquote p:before {
   left: -0.38em;
@@ -1748,10 +1751,17 @@ svg {
 .features__block.org-promo {
   width: 48.96%;
 }
-.features__block.org-promo .text h3 {
+.features__block.org-promo .text {
+  margin-top: 47.411px;
+  margin-top: 3.647rem;
+  margin-bottom: 58.123px;
+  margin-bottom: 4.471rem;
+}
+.features__block.org-promo .text h2 {
   color: #fff;
-  margin-bottom: 13px;
-  margin-bottom: 1rem;
+  font-weight: 400;
+  margin-bottom: 10.4px;
+  margin-bottom: 0.8rem;
 }
 .features__block.org-promo .arrow-link {
   font-family: TradeGothicLTStd, sans-serif;

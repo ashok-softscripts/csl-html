@@ -87,7 +87,7 @@
 			width: 48.96%;
 			.alumni-image{
 				float: right;
-				width: 36%;		
+				width: 34%;		
 				@include filter_elements(grayscale(100%));
 				opacity: 0.5;
 				img{
@@ -96,37 +96,40 @@
 			}
 			.text{
 				float: left;
-				width: 64%;
+				width: 66%;
 				box-sizing: border-box;
 				@include rem(padding, 3rem);
+				@include rem(padding-top, 3.647rem);
+				@include rem(padding-bottom, 4.471rem);
 				margin: 0;
 			}
 			h3{
 				font-weight: bold-of($display-type);
 				border: 0;
 				padding: 0;
-				font-size: 1.4vw;
 			}
-			blockquote{				
+			blockquote{	
+				@include rem(padding-bottom, 4.471rem);
 				p{
-					font-size: 1.4vw;
-					line-height: 1.8rem;
-					&:before{
+						&:before{
 						left: -0.38em;
 						font-size: 3.4em;
 					}
 				}
 			}
 			.arrow-link{
-				@include text-link(site-color(blue));			
+				@include text-link(site-color(blue));					
 			}
 		}
 		&.org-promo{
 			width: 48.96%;
 			.text{
-				h3{
+				@include rem(margin-top, 3.647rem);
+				@include rem(margin-bottom, 4.471rem);
+				h2{
 					color: site-color(white);
-					@include rem(margin-bottom, 1rem);
+					font-weight: regular-of($display-type);
+					@include rem(margin-bottom, 0.8rem);
 				}
 			}
 			.arrow-link{
