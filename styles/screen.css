@@ -855,18 +855,18 @@ svg {
   display: inline-block;
   padding: 17.589px;
   padding: 1.353rem;
-  padding-bottom: 13px;
-  padding-bottom: 1rem;
+  padding-top: 11.4712px;
+  padding-top: 0.8824rem;
+  padding-bottom: 7.6466px;
+  padding-bottom: 0.5882rem;
   background: #e8f3f5;
-  line-height: normal;
   cursor: pointer;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
 .nav__badge a {
   font-weight: 400;
-  font-size: 13px;
-  font-size: 1rem;
+  outline: none;
 }
 .nav__badge a span {
   width: 13px;
@@ -979,8 +979,33 @@ svg {
   transform: rotate(45deg);
   top: 0 !important;
 }
+.nav--open .breadcrumb {
+  display: none;
+}
 .nav--open .nav__list {
   display: block;
+}
+
+.breadcrumb {
+  display: inline-block;
+  padding: 17.589px;
+  padding: 1.353rem;
+  padding-top: 11.4712px;
+  padding-top: 0.8824rem;
+  padding-bottom: 7.6466px;
+  padding-bottom: 0.5882rem;
+}
+.breadcrumb a {
+  font-weight: 400;
+}
+.breadcrumb a:before {
+  display: inline-block;
+  content: "";
+  width: 5px;
+  height: 10px;
+  margin-right: 5.3534px;
+  margin-right: 0.4118rem;
+  background: url(../images/arrows/t-arrow-flip.png) no-repeat left center;
 }
 
 .header {

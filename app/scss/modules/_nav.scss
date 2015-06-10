@@ -6,14 +6,14 @@
 	&__badge {
     	display: inline-block;
 		@include rem(padding, 1.353rem);
-		@include rem(padding-bottom, 1rem);
+		@include rem(padding-top, 0.8824rem);
+		@include rem(padding-bottom, 0.5882rem);
 		background: site-color(blue_mid_light);
-		line-height: normal;
 		cursor: pointer;
 		transition: all 0.2s ease;
 		a {	
 			font-weight: regular-of($display-type);
-			@include rem(font-size, 1rem);
+			outline: none;
 			span{ 
 				@include rem(width, 1rem);
 				@include rem(height, 0.1765rem);
@@ -109,6 +109,9 @@
 					}
 				}
 			}
+		}
+		.breadcrumb{
+			display: none;
 		}
 		.nav__list{
 			display: block;
