@@ -34,30 +34,32 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="images/favicons/mstile-144x144.png">
 </head>
-
 <body class=""  id ="go-top">
+	<!--[if lt IE 9]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. We recommend <a href="http://browsehappy.com/">upgrading your browser</a> to improve your experience.</p>
+<![endif]-->
     <div id="main">
 		<nav id="primary-nav" class="nav">
-			<div class="nav__badge">
-				<a href="#"><span></span>Menu</a>
-			</div>
-			<ul class="nav__list">
-				<li class="nav__item"><a class="nav__link" href="index.html">Home</a></li>
-				<li class="nav__item"><a class="nav__link" href="#">What we do</a></li>
-				<li class="nav__item"><a class="nav__link" href="collection-programs.html">Our programs</a></li>
-				<li class="nav__item"><a class="nav__link" href="#">For organisations</a></li>
-				<li class="nav__item"><a class="nav__link" href="collection-alumni.html">For alumni</a></li>
-				<li class="nav__item"><a class="nav__link" href="#">Contribute</a></li>
-			</ul>
-			<ul class="nav__list nav--smaller">
-				<li class="nav__item"><a class="nav__link" href="#">About us</a></li>
-				<li class="nav__item"><a class="nav__link" href="#">Contact</a></li>
-				<li class="nav__item"><a class="nav__link" href="collection-alumni.html">Alumni directory</a></li>
-				<li class="nav__item"><a class="nav__link" href="#">Our partners</a></li>
-				<li class="nav__item"><a class="nav__link" href="#">News</a></li>
-				<li class="nav__item"><a class="nav__link" href="#">Events</a></li>
-			</ul>
-        </nav>
+	<div class="nav__badge">
+		<a href="#"><span></span>Menu</a>
+	</div>
+	<ul class="nav__list">
+		<li class="nav__item"><a class="nav__link" href="index.html">Home</a></li>
+		<li class="nav__item"><a class="nav__link" href="#">What we do</a></li>
+		<li class="nav__item"><a class="nav__link" href="collection-programs.html">Our programs</a></li>
+		<li class="nav__item"><a class="nav__link" href="#">For organisations</a></li>
+		<li class="nav__item"><a class="nav__link" href="collection-alumni.html">For alumni</a></li>
+		<li class="nav__item"><a class="nav__link" href="#">Contribute</a></li>
+	</ul>
+	<ul class="nav__list nav--smaller">
+		<li class="nav__item"><a class="nav__link" href="#">About us</a></li>
+		<li class="nav__item"><a class="nav__link" href="#">Contact</a></li>
+		<li class="nav__item"><a class="nav__link" href="collection-alumni.html">Alumni directory</a></li>
+		<li class="nav__item"><a class="nav__link" href="#">Our partners</a></li>
+		<li class="nav__item"><a class="nav__link" href="#">News</a></li>
+		<li class="nav__item"><a class="nav__link" href="#">Events</a></li>
+	</ul>
+</nav>
 		<div class="content">
 			<header class="header">
 				<div class="container">
@@ -80,158 +82,159 @@
 			</header>   
 			<!-- Features section -->
 			<section class="features">        
-				<div class="container is-full">
-					<div class="features__row">
-						<div class="features__block seasonal-message has-background_green_lime">
-							<div class="image-overlay" style="background-image:url(images/students.jpg)"></div>
-							<div class="text is-long">
-								<h2>Applications for our <strong>June 3-16</strong> <br /> fellowship program are now open</h2>
-								<a href="content-form.html" class="h2-style arrow-link arrow-white">Apply for consideration</a>
-							</div>
-						</div>
-						<div class="features__block newsletter has-background_blue_mid_light">
-							<div class="text is-long">
-								<h3>Stay in the loop</h3>
-								<p class="intro">Get the latest news, programs and events.</p>
-								<form name="newsletter" action="index.html" method="post">
-									<input type="email" name="nw-email" id="nw-email" placeholder="Enter your email" />
-									<button type="submit" name="nw-submit" value="Subscribe">Subscribe</button>
-								</form>
-							</div>
-						</div>						
-					</div>
-					<div class="features__row">
-						<div class="features__block testimonial has-background_blue_light">
-							<div class="alumni-image"><img src="images/Chloe-English-Syd.jpg" alt="Alumni" /></div>
-							<div class="text">
-								<h3>What our alumni say</h3>
-								<blockquote><p>I want to think strategically about how to make change</p></blockquote>
-								<a href="#" class="h3-style arrow-link">Meet Alana Tweddle</a>
-							</div>
-						</div>
-						<div class="features__block org-promo has-background_orange">
-							<div class="text">
-								<h2>Start an <strong>intrapreneurship</strong> <br />within your organisation</h2>
-								<a href="#" class="h3-style arrow-link arrow-white">Find out more</a>
-							</div>
-						</div>						
-					</div>	
+	<div class="container is-full">
+		<div class="features__row">
+			<div class="features__block seasonal-message has-background_green_lime">
+				<div class="image-overlay" style="background-image:url(images/students.jpg)"></div>
+				<div class="text is-long">
+					<h2>Applications for our <strong>June 3-16</strong> <br /> fellowship program are now open</h2>
+					<a href="content-form.html" class="h2-style arrow-link arrow-white">Apply for consideration</a>
 				</div>
-			</section>			
+			</div>
+			<div class="features__block newsletter has-background_blue_mid_light">
+				<div class="text is-long">
+					<h3>Stay in the loop</h3>
+					<p class="intro">Get the latest news, programs and events.</p>
+					<form name="newsletter" action="index.html" method="post">
+						<input type="email" name="nw-email" id="nw-email" placeholder="Enter your email" />
+						<button type="submit" name="nw-submit" value="Subscribe">Subscribe</button>
+					</form>
+				</div>
+			</div>						
+		</div>
+		<div class="features__row">
+			<div class="features__block testimonial has-background_blue_light">
+				<div class="alumni-image"><img src="images/Chloe-English-Syd.jpg" alt="Alumni" /></div>
+				<div class="text">
+					<h3>What our alumni say</h3>
+					<blockquote><p>I want to think strategically about how to make change</p></blockquote>
+					<a href="#" class="h3-style arrow-link">Meet Alana Tweddle</a>
+				</div>
+			</div>
+			<div class="features__block org-promo has-background_orange">
+				<div class="text">
+					<h2>Start an <strong>intrapreneurship</strong> <br />within your organisation</h2>
+					<a href="#" class="h3-style arrow-link arrow-white">Find out more</a>
+				</div>
+			</div>						
+		</div>	
+	</div>
+</section>			
 			<!-- Partners -->
 			<section class="partners-section">			
-				<div class="container is-full">
-					<h2>Proudly supported by</h2>
-					<ul class="partners">
-						<li class="partners__item"><a href="#"><img src="images/boeing.png" alt="Boeing" /></a></li>
-						<li class="partners__item"><a href="#"><img src="images/british-council.png" alt="British Council" /></a></li>
-						<li class="partners__item"><a href="#"><img src="images/interface.png" alt="Interface" /></a></li>
-						<li class="partners__item"><a href="#"><img src="images/ian-potter.png" alt="The IAN Potter Foundation" /></a></li>
-						<li class="partners__item"><a href="#"><img src="images/nsw.png" alt="NSW" /></a></li>
-						<li class="partners__item"><a href="#"><img src="images/acf.png" alt="Australian Communities" /></a></li>
-						<li class="partners__item"><a href="#"><img src="images/minds-at-work.png" alt="Minds a work" /></a></li>
-						<li class="partners__item"><a href="#"><img src="images/thick.png" alt="Thick" /></a></li>
-					</ul>
-					<div class="view-more"><a href="#" class="arrow-link">Our partners</a></div>
-				</div>					 
-			</section>
+	<div class="container is-full">
+		<h2>Proudly supported by</h2>
+		<ul class="partners">
+			<li class="partners__item"><a href="#"><img src="images/boeing.png" alt="Boeing" /></a></li>
+			<li class="partners__item"><a href="#"><img src="images/british-council.png" alt="British Council" /></a></li>
+			<li class="partners__item"><a href="#"><img src="images/interface.png" alt="Interface" /></a></li>
+			<li class="partners__item"><a href="#"><img src="images/ian-potter.png" alt="The IAN Potter Foundation" /></a></li>
+			<li class="partners__item"><a href="#"><img src="images/nsw.png" alt="NSW" /></a></li>
+			<li class="partners__item"><a href="#"><img src="images/acf.png" alt="Australian Communities" /></a></li>
+			<li class="partners__item"><a href="#"><img src="images/minds-at-work.png" alt="Minds a work" /></a></li>
+			<li class="partners__item"><a href="#"><img src="images/thick.png" alt="Thick" /></a></li>
+		</ul>
+		<div class="view-more"><a href="#" class="arrow-link">Our partners</a></div>
+	</div>					 
+</section>
 			<!-- News section -->
 			<section class="news">
-				<div class="container">
-					<div class="news__item">
-						<a href="#" class="news__cover filter-gray"><img src="images/news1.jpg" alt="News 1" /></a>
-						<h3>News</h3>
-						<div class="news__excerpt"><p>Regional community leaders set to make a sustainable future</p></div>
-						<div class="news__publish">Published 14 April</div>
-					</div>
-					<div class="news__item">
-						<a href="#" class="news__cover filter-gray"><img src="images/news2.jpg" alt="News 2" /></a>
-						<h3>News</h3>
-						<div class="news__excerpt"><p>Support for a remarkable young leader in Africa</p></div>
-						<div class="news__publish">Published 5 April</div>
-					</div>
-					<div class="news__item">
-						<a href="#" class="news__cover filter-sepia"><img src="images/event1.jpg" alt="Event 1" /></a>
-						<h3>Event</h3>
-						<div class="news__excerpt"><p>Sydney Alumni Pubocracy and old school funk!</p></div>
-						<div class="news__publish"><span class="icon_date svg-frame"><img src="images/icons/icon-date.svg" class="inject-me" alt="16 April, 2015" /></span>16 April, 2015<span class="icon_time svg-frame"><img src="images/icons/icon-time.svg" class="inject-me" alt="5pm" /></span>5pm</div>
-					</div>
-					<div class="news__item">
-						<a href="#" class="news__cover filter-sepia"><img src="images/event2.jpg" alt="Event 2" /></a>
-						<h3>Event</h3>
-						<div class="news__excerpt"><p>Fellowship information Session</p></div>
-						<div class="news__publish">
-							<span class="icon_date svg-frame"><img src="images/icons/icon-date.svg" alt="16 April, 2015" class="inject-me" /></span>16 April, 2015 <span class="icon_time svg-frame"><img src="images/icons/icon-time.svg" class="inject-me" alt="5pm" /></span>5pm</div>
-					</div>				
-				</div>
-			</section>
-			<section class="pre-footer">
-				<div class="pre-footer__left">
-					<div class="pre-footer__container">
-						<h3>Menu</h3>
-						<ul class="footer-menu">
-							<li><a href="#">Home</a></li>
-							<li><a href="#">What we do</a></li>
-							<li><a href="#">Our programs</a></li>
-							<li><a href="#">For organisations</a></li>
-							<li><a href="#">For alumni</a></li>
-							<li><a href="#">Contribute</a></li>
-						</ul>
-						<ul class="footer-menu">
-							<li><a href="#">About us</a></li>
-							<li><a href="#">Contact</a></li>
-							<li><a href="#">Alumni directory</a></li>
-							<li><a href="#">Our partners</a></li>
-							<li><a href="#">News</a></li>
-							<li><a href="#">Events</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="pre-footer__right">
-					<div class="pre-footer__container">
-						<h3>Get in touch</h3>
-						<div class="get-in-touch">							
-							<div class="contact-email"><a href="mailto:info@csl.org.au">info@csl.org.au</a></div>
-							<div class="social-networks">
-								<a href="#" target="_blank"><img src="images/icons/twitter.png" alt="Twitter" /></a>
-								<a href="#" target="_blank"><img src="images/icons/facebook.svg" alt="Facebook" /></a>
-								<a href="#" target="_blank"><img src="images/icons/linkedin.svg" alt="Linkedin" /></a>
-							</div>
-						</div>
-						<div class="location">
-							<strong>Melbourne</strong>
-							<p><span>Level 13, 190 Queen St, Melbourne, VIC 3000</span></p>
-							<p><span>03 9078 7378</span></p>
-						</div>
-						<div class="location">
-							<strong>Sydney</strong>
-							<p><span>7 Blackfriars Street, Chippendale NSW 2008</span></p>
-							<p><span>04 2381 1219</span></p>						
-						</div>
-					</div>
-				</div>
-			</section>
-			<footer class="footer">
-				<div class="thick-logo">
-					<div class="container">
-						<img src="images/thick-logo.png" alt="Thick logo" />
-					</div>																																		
-				</div>
-				<div class="csl-footer-logo">
-					<div class="container">
-						<img src="images/footer-logo.svg" alt="CSL" />
-					</div>
-				</div>
-			</footer>
+	<div class="container">
+		<div class="news__item">
+			<a href="#" class="news__cover filter-gray"><img src="images/news1.jpg" alt="News 1" /></a>
+			<h3>News</h3>
+			<div class="news__excerpt"><p>Regional community leaders set to make a sustainable future</p></div>
+			<div class="news__publish">Published 14 April</div>
 		</div>
-    </div>
+		<div class="news__item">
+			<a href="#" class="news__cover filter-gray"><img src="images/news2.jpg" alt="News 2" /></a>
+			<h3>News</h3>
+			<div class="news__excerpt"><p>Support for a remarkable young leader in Africa</p></div>
+			<div class="news__publish">Published 5 April</div>
+		</div>
+		<div class="news__item">
+			<a href="#" class="news__cover filter-sepia"><img src="images/event1.jpg" alt="Event 1" /></a>
+			<h3>Event</h3>
+			<div class="news__excerpt"><p>Sydney Alumni Pubocracy and old school funk!</p></div>
+			<div class="news__publish"><span class="icon_date svg-frame"><img src="images/icons/icon-date.svg" class="inject-me" alt="16 April, 2015" /></span>16 April, 2015<span class="icon_time svg-frame"><img src="images/icons/icon-time.svg" class="inject-me" alt="5pm" /></span>5pm</div>
+		</div>
+		<div class="news__item">
+			<a href="#" class="news__cover filter-sepia"><img src="images/event2.jpg" alt="Event 2" /></a>
+			<h3>Event</h3>
+			<div class="news__excerpt"><p>Fellowship information Session</p></div>
+			<div class="news__publish">
+				<span class="icon_date svg-frame"><img src="images/icons/icon-date.svg" alt="16 April, 2015" class="inject-me" /></span>16 April, 2015 <span class="icon_time svg-frame"><img src="images/icons/icon-time.svg" class="inject-me" alt="5pm" /></span>5pm</div>
+		</div>				
+	</div>
+	</section>			
+			<!-- Pre footer section -->
+			<section class="pre-footer">
+	<div class="pre-footer__left">
+		<div class="pre-footer__container">
+			<h3>Menu</h3>
+			<ul class="footer-menu">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">What we do</a></li>
+				<li><a href="#">Our programs</a></li>
+				<li><a href="#">For organisations</a></li>
+				<li><a href="#">For alumni</a></li>
+				<li><a href="#">Contribute</a></li>
+			</ul>
+			<ul class="footer-menu">
+				<li><a href="#">About us</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">Alumni directory</a></li>
+				<li><a href="#">Our partners</a></li>
+				<li><a href="#">News</a></li>
+				<li><a href="#">Events</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="pre-footer__right">
+		<div class="pre-footer__container">
+			<h3>Get in touch</h3>
+			<div class="get-in-touch">							
+				<div class="contact-email"><a href="mailto:info@csl.org.au">info@csl.org.au</a></div>
+				<div class="social-networks">
+					<a href="#" target="_blank"><img src="images/icons/twitter.png" alt="Twitter" /></a>
+					<a href="#" target="_blank"><img src="images/icons/facebook.svg" alt="Facebook" /></a>
+					<a href="#" target="_blank"><img src="images/icons/linkedin.svg" alt="Linkedin" /></a>
+				</div>
+			</div>
+			<div class="location">
+				<strong>Melbourne</strong>
+				<p><span>Level 13, 190 Queen St, Melbourne, VIC 3000</span></p>
+				<p><span>03 9078 7378</span></p>
+			</div>
+			<div class="location">
+				<strong>Sydney</strong>
+				<p><span>7 Blackfriars Street, Chippendale NSW 2008</span></p>
+				<p><span>04 2381 1219</span></p>						
+			</div>
+		</div>
+	</div>
+</section>
+			<!-- Footer section -->
+			<footer class="footer">
+	<div class="thick-logo">
+		<div class="container">
+			<img src="images/thick-logo.png" alt="Thick logo" />
+		</div>																																		
+	</div>
+	<div class="csl-footer-logo">
+		<div class="container">
+			<img src="images/footer-logo.svg" alt="CSL" />
+		</div>
+	</div>
+</footer>
+		</div>
+    </div>	
 	<!-- TODO: Tracking? -->
-    <!--[if lte IE 9]>
-		<script src="scripts/legacy.js"></script>
-	<![endif]-->
+<!--[if lte IE 9]>
+	<script src="scripts/legacy.js"></script>
+<![endif]-->
 
-	<script src="scripts/vendor.js"></script>
-	<script src="scripts/main.js"></script>
+<script src="scripts/vendor.js"></script>
+<script src="scripts/main.js"></script>
 </body>
-
 </html>

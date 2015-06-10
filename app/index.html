@@ -1,0 +1,40 @@
+@@include('partials/_head.html', { "title": "CSL" })
+<body class=""  id ="go-top">
+	@@include('partials/_unsupported-browser.html')
+    <div id="main">
+		@@include('partials/_nav.html')
+		<div class="content">
+			<header class="header">
+				<div class="container">
+					<a href="index.html" class="logo" title="Go to Centre for Sustainability Leadership"><img src="images/logo.svg" alt="CSL logo" /></a>
+					<div class="header-intro header-home">
+						<h1>Become a leader <br />in sustainability</h1>
+						<p class="intro">Personal and professional training for <br />sustainability leadership.</p>
+						<div class="arrows-nav">
+							<ul class="arrows-nav__list">
+								<li class="arrows-nav__item"><a class="arrows-nav__link" href="#">What we do</a></li>
+								<li class="arrows-nav__item"><a class="arrows-nav__link" href="collection-programs.html">Our programs</a></li>
+							</ul>
+							<ul class="arrows-nav__list">							
+								<li class="arrows-nav__item"><a class="arrows-nav__link" href="#">For organisations</a></li>
+								<li class="arrows-nav__item"><a class="arrows-nav__link" href="collection-alumni.html">For alumni</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>        	
+			</header>   
+			<!-- Features section -->
+			@@include('partials/_home-features.html')			
+			<!-- Partners -->
+			@@include('partials/_partners.html')
+			<!-- News section -->
+			@@include('partials/_news.html')			
+			<!-- Pre footer section -->
+			@@include('partials/_pre-footer.html')
+			<!-- Footer section -->
+			@@include('partials/_footer.html')
+		</div>
+    </div>	
+	@@include('partials/_scripts.html')
+</body>
+</html>
