@@ -8,26 +8,30 @@
 		list-style: none;
 		margin: 0;
 		padding: 0;
+		@include clearfix;
 		li{
 			padding: 0;
-			@include rem(padding-left, 0.7059rem);
-			@include rem(padding-right, 0.7059rem);
-			display: inline-block;
+			display: none;
 			color: site-color(blue);
-			@include rem(font-size, 1.5rem);
-			&.current{
-				color: site-color(blue_dark);
-			}
-			&.more{
-				padding: 0;
-			}
 			&.prev{
-				position: absolute;
-				left: 0;
+				display: block;
+				float: left;
 			}
 			&.next{
-				position: absolute;
-				right: 0;
+				display: block;
+				float: right;
+			}
+			@include breakpoint-layout(break-2) {			
+				@include rem(padding-left, 0.7059rem);
+				@include rem(padding-right, 0.7059rem);
+				display: inline-block;				
+				@include rem(font-size, 1.5rem);
+				&.current{
+					color: site-color(blue_dark);
+				}
+				&.more{
+					padding: 0;
+				}				
 			}
 		}
 	}

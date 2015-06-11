@@ -2246,30 +2246,42 @@ svg {
   margin: 0;
   padding: 0;
 }
+.pagination ul:before, .pagination ul:after {
+  display: table;
+  content: "";
+}
+.pagination ul:after {
+  clear: both;
+}
 .pagination ul li {
   padding: 0;
-  padding-left: 9.1767px;
-  padding-left: 0.7059rem;
-  padding-right: 9.1767px;
-  padding-right: 0.7059rem;
-  display: inline-block;
+  display: none;
   color: #006d81;
-  font-size: 19.5px;
-  font-size: 1.5rem;
-}
-.pagination ul li.current {
-  color: #31555c;
-}
-.pagination ul li.more {
-  padding: 0;
 }
 .pagination ul li.prev {
-  position: absolute;
-  left: 0;
+  display: block;
+  float: left;
 }
 .pagination ul li.next {
-  position: absolute;
-  right: 0;
+  display: block;
+  float: right;
+}
+@media screen and (min-width: 47.9375em) {
+  .pagination ul li {
+    padding-left: 10.5885px;
+    padding-left: 0.7059rem;
+    padding-right: 10.5885px;
+    padding-right: 0.7059rem;
+    display: inline-block;
+    font-size: 22.5px;
+    font-size: 1.5rem;
+  }
+  .pagination ul li.current {
+    color: #31555c;
+  }
+  .pagination ul li.more {
+    padding: 0;
+  }
 }
 
 .alumni:before, .alumni:after {
