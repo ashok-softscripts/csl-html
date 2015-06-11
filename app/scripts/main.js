@@ -95,6 +95,10 @@ $(function() {
 		// match height of partners blocks
 		if ($partners_item.length > 0) {
 			$partners_item.matchHeight(true);
+			$partners_item.each(function(){
+				var $partner_height = $(this).height();
+				$(this).children('a').css('line-height',$partner_height + 'px');
+			});
 		}
 		// match height of footer blocks
 		if ($pre_footer.length > 0) {

@@ -1,12 +1,17 @@
 .program-format{
-	@include rem(padding-top, 5rem);
-	@include rem(padding-bottom, 5rem);
-	.container{
-		
+	@include rem(padding-top, 2rem);
+	@include rem(padding-bottom, 2rem);
+	@include breakpoint-layout(break-2) {
+		@include rem(padding-top, 5rem);
+		@include rem(padding-bottom, 5rem);
 	}
 	&__right{
+		display: none;
 		@include span(5 of 12);
 		float: right;
+		@include breakpoint-layout(break-2) {
+			display: block;
+		}
 	}
 	&__cover{
 		@include rem(margin-bottom, 1rem);
@@ -15,7 +20,9 @@
 		}
 	}
 	&__left{
-		@include span(5 of 12);
+		@include breakpoint-layout(break-2) {
+			@include span(5 of 12);		
+		}
 	}
 	&__list{
 		margin: 0px;
@@ -30,17 +37,27 @@
 		&:before{
 			content: "";
 			display: block;
-			width: 16/16 * 1rem;
-			height: 16/16 * 1rem;			
+			width: 16/13 * 1rem;
+			height: 16/13 * 1rem;			
 			position: absolute;			
-			left: -1.6em;
-			top: 0.2em;
-			@include svg-bg(icons/icon-date-blue);			
+			left: -1.2em;
+			top: 0.4em;
+			@include svg-bg(icons/icon-date-blue);	
+			
+			@include breakpoint-layout(break-2) {
+				width: 16/17 * 1rem;
+				height: 16/17 * 1rem;
+				top: 0.2em;
+				left: -1.6em;
+			}
 		}
 		h3{
-			border: 0px;
+			border-top: 0px;
 			padding: 0px;
 			font-weight: bold-of($display-type);
+			@include breakpoint-layout(break-2) {
+				border-bottom: 0px;
+			}
 		}
 	}
 }

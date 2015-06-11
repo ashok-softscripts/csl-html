@@ -3,7 +3,7 @@
 	z-index: 99;
 	left: 0;
 	top: 0;
-	@include breakpoint-layout(break-1) {
+	@include breakpoint-layout(break-2) {
 		position: fixed;
 	}
 	&__badge {

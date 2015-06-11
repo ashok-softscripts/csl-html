@@ -1,6 +1,5 @@
 section{
 	.program-content{
-		@include span(6 of 12);		
 		p{
 			padding-bottom: 1rem;
 		}
@@ -17,6 +16,9 @@ section{
 					left: -0.4em
 				}
 			}
-		}		
+		}
+		@include breakpoint-layout(break-2) {
+			@include span(6 of 12);		
+		}
 	}	
 }

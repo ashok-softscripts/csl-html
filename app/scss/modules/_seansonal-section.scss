@@ -1,8 +1,14 @@
 .seansonal-section{
-	@include rem(padding-top, 4.5rem);
-	@include rem(padding-bottom, 5rem);
+	@include rem(padding-top, 2.648rem);
+	@include rem(padding-bottom, 4.615rem);
+	@include breakpoint-layout(break-2) {
+		@include rem(padding-top, 4.5rem);
+		@include rem(padding-bottom, 5rem);	
+	}
 	&__content{
-		width: 50%;
+		@include breakpoint-layout(break-2) {
+			width: 50%;
+		}
 	}
 	h2, .h2-style{
 		color: site-color(white);
@@ -14,9 +20,5 @@
 	}
 	
 	// theming colors
-	@each $color in $site-color-names {
-		&.has-background_#{'' + $color} {
-			background: site-color($color);
-		}
-	}
+	@extend %has-background-color;
 }

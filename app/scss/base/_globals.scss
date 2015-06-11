@@ -40,16 +40,20 @@ svg {
     @include set-container;
     @extend %typeset;
     clear: both;
-	@include rem(padding-left, 3rem);
-	@include rem(padding-right, 3rem);
+	@include rem(padding-left, 2.308rem);
+	@include rem(padding-right, 2.308rem);
+	@include breakpoint-layout(break-2) {
+		@include rem(padding-left, 3rem);
+		@include rem(padding-right, 3rem);	
+		&.is-offset{
+			max-width: 100%;
+			padding-right: 0px;
+			margin-right: 0px;
+		}
+	}
 	box-sizing: border-box;
 	&.is-full{
 		padding: 0px;
-	}
-	&.is-offset{
-		max-width: 100%;
-		padding-right: 0px;
-		margin-right: 0px;
 	}
 }
 
@@ -61,17 +65,18 @@ svg {
 .content{
 	background-color: site-color(white);
 	transition: all 0.2s ease;
-	@include breakpoint-layout(break-1) {
+	@include breakpoint-layout(break-2) {
 		transition: none;	
 	}
 	&--has-nav{
 		transform: translate3d(19.06rem, 0px, 0px);
-		@include breakpoint-layout(break-1) {
+		@include breakpoint-layout(break-2) {
 			transform: none;
-			@include rem(margin-left, 19.06rem);		
-		}
-		.container, .footer__left__container, .pre-footer__container{
-			@include rem(margin-left, 3rem);
-		}
+			@include rem(margin-left, 19.06rem);
+			
+			.container, .footer__left__container, .pre-footer__container{
+				@include rem(margin-left, 3rem);
+			}
+		}		
 	}	
 }

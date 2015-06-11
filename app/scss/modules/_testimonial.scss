@@ -1,9 +1,7 @@
 .testimonial{
-	&__item{
-		float: left;
-		@include rem(margin-top, 5rem);
-		@include rem(margin-bottom, 4rem);
-		@include rem(max-width, 28.75rem);
+	@include rem(padding-top, 5rem);
+	@include rem(padding-bottom, 4rem);		
+	&__item{		
 		h3{
 			color: site-color(white);
 			font-weight: bold-of($display-type);
@@ -17,20 +15,25 @@
 				}
 			}
 		}
+		@include breakpoint-layout(break-2) {
+			float: left;
+			@include rem(max-width, 28.75rem);
+		}
 	}
 	&__cover{
+		display: none;
 		float: left;
 		@include rem(width, 14.94rem);
 		@include rem(margin-left, 3.75rem);
+		@include rem(margin-top, -5rem);
 		img{
 			@include filter_elements(grayscale(100%));
 			opacity: 0.4;
 		}
-	}
-	// theming colors
-	@each $color in $site-color-names {
-		&.has-background_#{'' + $color} {
-			background: site-color($color);
+		@include breakpoint-layout(break-2) {
+			display: block;
 		}
 	}
+	// theming colors
+	@extend %has-background-color;		
 }
