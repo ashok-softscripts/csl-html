@@ -1,5 +1,5 @@
 .breadcrumb{
-	display: inline-block;
+	display: none;
 	@include rem(padding, 1.353rem);
 	@include rem(padding-top, 0.8824rem);
 	@include rem(padding-bottom, 0.5882rem);
@@ -13,5 +13,8 @@
 			@include rem(margin-right, 0.4118rem);
 			background: url(#{$image-path}/arrows/t-arrow-flip.png) no-repeat left center;
 		}
+	}
+	@include breakpoint-layout(break-1) {
+		display: inline-block;
 	}
 }
