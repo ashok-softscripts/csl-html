@@ -55,7 +55,7 @@
 		<li class="nav__item"><a class="nav__link" href="#">About us</a></li>
 		<li class="nav__item"><a class="nav__link" href="#">Contact</a></li>
 		<li class="nav__item"><a class="nav__link" href="collection-alumni.html">Alumni directory</a></li>
-		<li class="nav__item"><a class="nav__link" href="#">Our partners</a></li>
+		<li class="nav__item"><a class="nav__link" href="collection-partners.html">Our partners</a></li>
 		<li class="nav__item"><a class="nav__link" href="#">News</a></li>
 		<li class="nav__item"><a class="nav__link" href="#">Events</a></li>
 	</ul>
@@ -69,32 +69,92 @@
 						<p><a href="content-program.html">See program overview</a></p>
 					</div>					
 				</div>        	
-			</header>    			
-			<section class="general" id="overview">        
+			</header>
+			<div class="indexnav">
+				<ul class="indexnav__list">
+					<li class="indexnav__item"><a href="#" data-target="introduction" class="indexnav__link is-active">Introduction</a></li>
+					<li class="indexnav__item"><a href="#" data-target="personal-info" class="indexnav__link">Personal information</a></li>
+					<li class="indexnav__item"><a href="#" data-target="employment" class="indexnav__link">Employment, education,fee typ</a></li>
+					<li class="indexnav__item"><a href="#" data-target="questions" class="indexnav__link">Applicant questions</a></li>
+					<li class="indexnav__item"><a href="#" data-target="resume" class="indexnav__link">Resume</a></li>
+				</ul>						
+			</div>
+			<section class="general overview" id="introduction">        
 				<div class="container">
 					<div class="program-content">
 						<h3>Applications for our upcoming fellowship are now open.</h3>
-						<p>To apply, you are required to answer a series of questions, and fill out personal information. This should take about five hours. Following a successful application, we￿ffe2￿ff80￿ff99ll conduct in-person or online interviews.</p>
-					</div>	
-					<div class="indexnav">
-						<ul class="indexnav__list">
-							<li class="indexnav__item"><a href="#overview" class="indexnav__link is-active">Introduction</a></li>
-							<li class="indexnav__item"><a href="#personal-information" class="indexnav__link">Personal information</a></li>
-							<li class="indexnav__item"><a href="#employment" class="indexnav__link">Employment, education,fee typ</a></li>
-							<li class="indexnav__item"><a href="#applicant-questions" class="indexnav__link">Applicant questions</a></li>
-							<li class="indexnav__item"><a href="#resume" class="indexnav__link">Resume</a></li>
-						</ul>						
-					</div>
+						<p>To apply, you are required to answer a series of questions, and fill out personal information. This should take about five hours. Following a successful application, we'll conduct in-person or online interviews.</p>
+					</div>						
 				</div>
 			</section>
 			<!-- Program form -->
-			<section class="apply-form">
+			<section class="apply-form has-background_blue_ver_light">
 				<div class="container">	
-					<h3>Personal Information</h3>
-					<p></p>
-					<p>Form will appear here</p>
-					<p></p>
-					<p></p>
+					<form action="index.html" method="post">
+						<div class="field-section" id="personal-info">
+							<h3>Personal Information</h3>
+							<div class="field-group">
+								<label for="name">Name (required)</label>
+								<input type="text" name="name" id="name" value="" />
+							</div>
+							<div class="field-group">
+								<label for="dob">Date of birth (required)</label>							
+								<select id="dob" name="dob_month" class="medium">
+									<option value="">Month</option>
+									<option value="">Jan</option>
+									<option value="">Feb</option>
+									<option value="">Mar</option>
+								</select>
+								<select id="dob_day" name="dob_day" class="small">
+									<option value="">Day</option>
+									<option value="">1</option>
+									<option value="">2</option>
+									<option value="">3</option>
+								</select>
+								<select id="dob_year" name="dob_year" class="small">
+									<option value="">Year</option>
+									<option value="">2015</option>
+									<option value="">2014</option>
+									<option value="">2013</option>
+								</select>
+							</div>
+							<div class="field-group">
+								<label for="gender">Gender</label>
+								<input type="radio" id="gender-male" name="gender" value="male" /> <label for="gender-male" class="radio-label">Male</label>
+								<input type="radio" id="gender-female" name="gender" value="Female" /> <label for="gender-female" class="radio-label">Female</label>
+							</div>
+							<div class="field-group">
+								<label for="address">Address, line 1 (required)</label>
+								<input type="text" name="address" placeholder="e.g 3 Place st" id="address" value="" />
+							</div>
+							<div class="field-group">
+								<label for="address2">Address, line 2</label>
+								<input type="text" name="address2" placeholder="e.g Unit 3" id="address2" value="" />
+							</div>
+							<div class="field-group">
+								<label for="zipcode">Postal code (required)</label>
+								<input type="text" name="zipcode" placeholder="e.g 3000" id="zipcode" value="" />
+							</div>
+							<div class="field-group">
+								<label for="city">City</label>
+								<input type="text" name="city" placeholder="e.g Melbourne" id="city" value="" />
+							</div>
+						</div>
+						<div class="field-section" id="employment">
+							<h3>Employment, education and fee type</h3>
+							<div class="field-group">
+								<label for="message">Your message</label>
+								<textarea name="message" id="message"></textarea>
+							</div>
+						</div>
+						<div id="questions"></div>
+						<div id="resume"></div>
+						<div class="field-section">
+							<div class="field-group">
+								<input type="submit" class="submit" name="submit" id="submit" value="Apply now" />
+							</div>
+						</div>
+					</form>
 				</div>
 			</section>			
 			<!-- Features section -->
