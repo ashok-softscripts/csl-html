@@ -161,19 +161,19 @@
 			<section class="features">        
 	<div class="container is-full">
 		<div class="features__row">
-			<div class="features__block seasonal-message has-background_green" >							
-				<div class="text">
+			<div class="features__block span_9 seasonal-message has-background_green" >							
+				<div class="block-container">
 					<h2><strong>Personal and professional leadership for sustainability</strong></h2>
 					<a href="#" class="h2-style arrow-link arrow-white">What we do</a>
 				</div>
 			</div>
-			<div class="features__block newsletter has-background_green_light">
-				<div class="text">
+			<div class="features__block span_3 newsletter has-background_green_light">
+				<div class="block-container">
 					<h3>Stay in the loop</h3>
 					<p class="intro">Get the latest news, programs and events.</p>
-					<form name="newsletter" action="index.html" method="post">
-						<input type="email" name="nw-email" id="nw-email" placeholder="Enter your email" />
-						<button type="submit" name="nw-submit" value="Subscribe">Subscribe</button>
+					<form id="mc-form">
+						<input type="email" name="EMAIL" id="mc-email" placeholder="Enter your email" />
+						<button type="submit" value="Subscribe">Subscribe</button>
 					</form>
 				</div>
 			</div>						
@@ -248,7 +248,11 @@
 <!--[if lte IE 9]>
 	<script src="scripts/legacy.js"></script>
 <![endif]-->
-
+<script type='text/javascript'>
+/* <![CDATA[ */
+var Newsletter = {"campaign_url": "http://csl.us11.list-manage.com/subscribe/post?u=0b56812318d8405e6f7c51adc&amp;id=104be89878", "success_msg": "Thanks &mdash; look out for a confirmation email in your inbox."};
+/* ]]> */
+</script>
 <script src="scripts/vendor.js"></script>
 <script src="scripts/main.js"></script>
 </body>
