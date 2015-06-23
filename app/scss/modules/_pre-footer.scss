@@ -58,6 +58,9 @@
 			border-bottom: 0px;
 			margin: 0px;
 			@include rem(margin-bottom, 0.5882rem);
+			@media screen and (max-width: 30em) {
+				font-size: 1.3rem;
+			}
 		}
 	}
 	
@@ -82,13 +85,15 @@
 						@include text-link(site-color(blue));					
 					}
 				}				
-				@include breakpoint-layout(break-2) {
+				@include breakpoint-layout(break-1) {
 					float: left;
-					width: 48%;
-					margin-bottom: 0;
+					width: 48%;					
 					&:nth-child(2n){
 						float: right;
 					}
+				}
+				@include breakpoint-layout(break-2) {
+					margin-bottom: 0;
 				}
 			}
 		}

@@ -36,10 +36,20 @@
 		font-size: 1rem;
 		line-height: 1.5rem;
 		@include rem(margin-bottom, 4.75rem);
+		@include breakpoint-layout(break-1) {
+			float: left;
+			width: 48.96%;
+			margin-right: 2.08%;		
+			&:nth-child(2n){
+				margin-right: 0;
+			}
+		}
 		@include breakpoint-layout(break-2) {
 			float: left;
 			width: 31.91%;
-			margin-right: 2.08%;		
+			&:nth-child(2n){
+				margin-right: 2.08%;		
+			}
 			&:nth-child(3n){
 				margin-right: 0;
 			}

@@ -7,14 +7,24 @@
 	}
 	&__item{		
 		@include rem(margin-bottom, 4.75rem);		
-		@include breakpoint-layout(break-2) {
+		@include breakpoint-layout(break-1) {
 			margin-right: 2.08%;
 			float: left;
-			width: 31.91%;		
-			&:nth-child(3n){
+			width: 48.96%;		
+			&:nth-child(2n){
 				margin-right: 0px;
 			}
 		}
+		@include breakpoint-layout(break-2) {			
+			float: left;
+			width: 31.91%;	
+			&:nth-child(2n){
+				margin-right: 2.08%;
+			}
+			&:nth-child(3n){
+				margin-right: 0px;
+			}
+		}		
 		&.is-open{
 			.programs__status{
 				color: site-color(green);

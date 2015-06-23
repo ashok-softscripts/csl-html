@@ -9,7 +9,7 @@
 	}
 	.thick-logo{
 		@include rem(padding-top, 0.4rem);
-		@include breakpoint-layout(break-2) {
+		@include breakpoint-layout(break-1) {
 			@include span(5 of 12);
 			float: left;
 			@include rem(padding-top, 7.41rem);
@@ -29,8 +29,7 @@
 		.container{			
 			padding: 0px;
 		}
-		@include breakpoint-layout(break-2) {
-			background: site-color(blue_mid_light);
+		@include breakpoint-layout(break-1) {
 			@include span(7 of 12);
 			float: right;	
 			.container{			
@@ -38,6 +37,9 @@
 					@include rem(max-width, 17rem);
 				}
 			}
+		}
+		@include breakpoint-layout(break-2) {
+			background: site-color(blue_mid_light);			
 		}
 	}
 }
