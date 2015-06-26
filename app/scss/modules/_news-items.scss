@@ -60,7 +60,8 @@
 		@include text-link(site-color(blue_dark), site-color(blue_dark));
 	}
 	&__publish{
-		font-weight: regular-of($display-type);		
+		font-weight: regular-of($display-type);	
+		@extend %small-style;
 	}
 	&.latest-news{
 		.news__item{

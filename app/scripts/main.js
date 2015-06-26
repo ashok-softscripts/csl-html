@@ -225,10 +225,15 @@
 	
 	function setIndexnav(){
 		if ($indexnav.length > 0) {
-			var page_width = $page.width();
-			var cont_width = $container.width();
+			var page_width = $page.width();			
+			var cont_width = $container.width();			
 			var p_right = parseInt(page_width - cont_width)/2;
-			$indexnav.css('right', p_right);
+			if($window.width() >= 1148){
+				$indexnav.css('right', p_right);
+			}
+			else{
+				$indexnav.css('right', 0);
+			}
 		}
 	}
 	
@@ -272,7 +277,7 @@
 	if (($header_section.length > 0) && ($indexnav.length > 0) ) {
 		var firstScrollTop = $header_section.outerHeight();
 		var lastSection = '#' + $indexnav.find('.indexnav__item:last-child').children('a').attr('data-target');
-		var lastScrollTop = $(lastSection).offset().top + ($(lastSection).height()/2); 
+		var lastScrollTop = $(lastSection).offset().top; 
 		$(window).scroll(function(event){
 			var st = jQuery(this).scrollTop();
 			if (st > firstScrollTop && st < lastScrollTop){

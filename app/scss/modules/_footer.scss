@@ -1,8 +1,9 @@
 .footer{		
-	@include rem(padding-bottom, 4.2rem);
+	@include rem(padding-bottom, 2.462rem);
 	@include clearfix;
 	@include breakpoint-layout(break-2) {
 		background: site-color(blue_ver_light);	
+		@include rem(padding-bottom, 4.2rem);
 	}
 	a{
 		background: none;
@@ -14,7 +15,7 @@
 			float: left;
 			@include rem(padding-top, 7.41rem);
 			.container{
-				@include rem(max-width, 30.24rem);			
+				@include rem(max-width, 29.4rem);			
 				margin-left: auto;
 				margin-right: 0px;
 				@include rem(padding-left, 3rem);
