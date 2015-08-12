@@ -1,15 +1,11 @@
 .all_partners{
-	@include rem(padding-top, 2rem);
-	@include rem(padding-bottom, 1.25rem);
-	@include breakpoint-layout(break-2) {
-		@include rem(padding-top, 5rem);
-		@include rem(padding-bottom, 2.25rem);
-	}
+	@include rem(margin-top, 2rem);
+	@include rem(margin-bottom, 3.54rem);
 	&__list{
 		@include clearfix;
 	}
-	&__item{
-		@include rem(margin-bottom, 4.75rem);			
+	&__item{		
+		@include rem(margin-bottom, 6.667rem);			
 		@include breakpoint-layout(break-1) {
 			float: left;
 			width: 48.96%;
@@ -30,32 +26,53 @@
 		}		
 	}
 	&__logo {
-		background: none !important;
+		overflow: hidden;
+        position: relative;
+        padding-top: 277/368 * 100%;
+        height: 0;
         display: block;
-		-webkit-transform-style: preserve-3d;
-		-moz-transform-style: preserve-3d;
-		transform-style: preserve-3d;
-		img{
-			@include breakpoint-layout(break-1) {
-				position: relative;
-				top: 50%;
-				-webkit-transform: translateY(-50%);
-				-ms-transform: translateY(-50%);
-				transform: translateY(-50%);
-			}
-		}
+        background: site-color(blue_mid_light) !important;
+        img {
+            position: absolute;
+            max-width: 100%;
+			top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+        }
+					
     }
 	h3{
 		font-weight: bold-of($display-type);
+		@include rem(border-bottom-width, 0.4rem);
 	}
 	
 	&__excerpt{	
-		p{			
-			@include breakpoint-layout(break-2) {
-				font-size: 1rem;
-				line-height: 1.5rem;
-			}
+		p{						
+			font-size: 1.333rem;
+			line-height: 2rem;			
+			border-top-width: 0;
+			@include rem(padding-top, 1.2rem);
 		}
 	}
 	@extend %has-background-color;
+}
+
+.partner_logo_large{
+	overflow: hidden;
+	position: relative;
+	padding-top: 356/468 * 100%;
+	height: 0;
+	display: block;
+	background: site-color(blue_mid_light) !important;
+	img {
+		position: absolute;
+		max-width: 100%;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+	}
 }

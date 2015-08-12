@@ -1,11 +1,12 @@
 .alumni-filters{
 	@include clearfix;
-	@include rem(padding-top, 1.176rem);
-	@include rem(padding-bottom, 1.176rem);	
+	@include rem(padding-top, 1.666rem);
+	@include rem(padding-bottom, 1.666rem);	
 	label{
+		font-size: 1.333rem;
 		float: left;
-		@include rem(margin-right, 0.8235rem);
-		@include rem(line-height, 2.353rem);
+		@include rem(margin-right, 1.166rem);
+		@include rem(line-height, 3.33rem);
 		display: none;
 		@include breakpoint-layout(break-3) {	
 			display: block;
@@ -14,13 +15,13 @@
 	.drop-down{
 		float: left;
 		width: 100%;
-		@include rem(margin-right, 0.8235rem);		
+		@include rem(margin-right, 1.166rem);		
 		@include breakpoint-layout(break-1) {	
 			&.filter-by-programs{
-				@include rem(width, 11.18rem);
+				@include rem(width, 15.83rem);
 			}
 			&.filter-by-role{
-				@include rem(width, 15rem);
+				@include rem(width, 21.25rem);
 			}
 		}
 	}
@@ -38,9 +39,7 @@
 .alumni{
 	@include clearfix;		
 	&__item{
-		font-size: 1rem;
-		line-height: 1.5rem;
-		@include rem(margin-bottom, 4.75rem);
+		@include rem(margin-bottom, 7.48rem);
 		@include breakpoint-layout(break-1) {
 			float: left;
 			width: 48.96%;
@@ -74,36 +73,33 @@
             left: 0;
             right: 0;
 			width: 100%;
+			
         }
 		// theming colors
         @extend %has-background-color;
         
     }
-	&__excerpt{
-		@include breakpoint-layout(break-2) {
-			p{
-				font-size: 1rem;
-				line-height: 1.5rem;
-			}
-		}
+	&__excerpt{		
+		@include rem(margin-bottom, 1.2rem);
+		p{
+			font-size: 1.333rem;
+			line-height: 2rem;				
+			border-top-width: 0;
+			@include rem(padding-top, 1.2rem);
+		}		
 	}
 	&__type{
-		@include rem(margin-top, 2rem);
-		font-weight: regular-of($display-type);	
-		font-size: 1.231rem;
-		@include breakpoint-layout(break-1) {
-			font-size: 1.142rem;
+		@include rem(margin-top, 2.83rem);
+		font-weight: regular-of($display-type);			
+		font-size: 1.333rem;
+		@include breakpoint-layout(break-1) {			
 			margin-top: 0;
-		}
-		@include breakpoint-layout(break-2) {
-			font-size: 1.06rem;
-		}
-		@include breakpoint-layout(break-3) {
-			font-size: 0.9412rem;
-		}
+		}		
 	}
 	h3{
-		font-weight: bold-of($display-type);			
+		font-weight: bold-of($display-type);
+		border-top-width: 1.3rem;
+		border-bottom-width: 0;
 	}
 
 }
